@@ -213,13 +213,13 @@ Map the system to understand its behavior, not just its parts:
 
 ## When to use this skill
 
-- Problems that keep recurring despite fixes
-- Unintended consequences from interventions
-- Complex organizational issues
-- When "obvious" solutions make things worse
-- Resource allocation and scaling challenges
-- Cultural and behavioral problems
-- Long-term strategic planning
-- Understanding why systems resist change
-- Identifying high-leverage interventions
-- Seeing beyond surface symptoms to structure
+- When the same problem keeps recurring despite your attempts to fix it
+- When previous solutions created unexpected side effects or made things worse
+- When you notice yourself treating symptoms rather than addressing root causes
+- To understand why "obvious" interventions fail or backfire
+- When individual incentives seem misaligned with desired outcomes
+- To identify why systems resist change even when everyone wants improvement
+- When you need to find high-leverage intervention points in complex problems
+- Before implementing solutions to organizational, cultural, or behavioral issues
+- When cause and effect are separated by time and difficult to connect
+- To understand why simple linear thinking hasn't solved the problem

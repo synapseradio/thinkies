@@ -11,196 +11,114 @@ Discover where small actions create outsized results through amplification, comp
 
 When finding leverage points:
 
-1. **Map the system**:
-   - What are you trying to improve?
-   - What are the key components and flows?
-   - Where does value get created or destroyed?
-   - Sketch the causal relationships
+1. **Map the system and identify bottlenecks** - Understand what you're trying to improve by sketching key components, flows, and causal relationships, then locate limiting factors where things get stuck or slow down, since removing bottlenecks that block multiple other things creates multiplier effects.
 
-2. **Look for bottlenecks**:
-   - What's the limiting factor?
-   - Where do things get stuck or slow?
-   - What's blocking multiple other things?
-   - Removing bottlenecks has multiplier effects
+2. **Find amplification and network effects** - Look for points where one action affects many outcomes through reuse or repetition, identify what many things depend on (like teaching, tooling, templates, or documentation), and spot where one person's contribution helps everyone or where value increases as more people participate.
 
-3. **Find amplification points**:
-   - Where can one action affect many outcomes?
-   - What gets reused or repeated?
-   - What do many things depend on?
-   - Teaching, tooling, and templates amplify
+3. **Spot compounding opportunities and root causes** - Identify what builds on itself over time through small advantages that accumulate (skills, processes, culture, technical foundations), distinguish root causes that create many symptoms from surface symptoms themselves, and consider second-order effects where foundational work enables other improvements.
 
-4. **Identify network effects**:
-   - What becomes more valuable as more people use it?
-   - Where does one person's contribution help everyone?
-   - Documentation, shared tools, standards
-
-5. **Spot compounding opportunities**:
-   - What builds on itself over time?
-   - Where do small advantages accumulate?
-   - Skills, processes, culture, technical foundations
-
-6. **Look for root causes**:
-   - What creates many symptoms?
-   - Fixing causes beats treating symptoms
-   - One fix that prevents many problems
-
-7. **Consider second-order effects**:
-   - What enables other improvements?
-   - What makes future work easier?
-   - Infrastructure and foundations have delayed but large impact
-
-8. **Evaluate leverage ratio**:
-   - Effort in vs impact out
-   - Account for sustainability and maintenance
-   - True leverage should be 10x or better
-
-9. **Watch for false leverage**:
-   - Looks high-impact but requires constant effort
-   - One-time boost without lasting effect
-   - Creates dependencies or technical debt
+4. **Evaluate leverage ratio and watch for false leverage** - Compare effort invested against impact produced while accounting for sustainability and maintenance costs, aiming for true leverage of 10x or better, while avoiding approaches that look high-impact but require constant effort, provide one-time boosts without lasting effect, or create dependencies and technical debt.
 
 ## Examples
 
-### Finding technical leverage:
+### Technical system improvement
 
-"**System**: Team struggling with production bugs
+"**System**: Engineering team struggling with frequent production bugs.
 
-**Initial options** (low leverage):
-- Fix bugs one by one (linear, never-ending)
-- Add more QA testing (helps but doesn't prevent)
-- Write better documentation (symptom treatment)
+**Low leverage approaches** (linear effort): Fix bugs one by one as they appear, add more QA testing to catch issues, write better documentation explaining workarounds.
 
-**Higher leverage investigation**:
+**Bottleneck investigation**: Deploy process takes two hours and requires manual steps, causing developers to batch fixes rather than deploy immediately, resulting in large releases with poor isolation of issues.
 
-**Bottleneck found**: Deploy process takes 2 hours, requires manual steps
-- Result: Developers avoid deploying fixes until many accumulate
-- Leverage point: Automate deployment (20 hours investment)
-- Impact: Enables fast fixes, reduces batch size, faster feedback
-- Multiplier: 10x+ (enables continuous improvement)
+**Leverage point identified**: Automate deployment pipeline.
+- Investment: 20 hours of engineering work
+- Impact: Enables fast fixes, reduces batch size, creates faster feedback loops
+- Multiplier: 10x or more by enabling continuous improvement culture
 
-**Amplification found**: Same types of bugs repeat across services
-- Root cause: No shared validation library
-- Leverage point: Build shared validation once (40 hours)
-- Impact: Every service gets better validation automatically
-- Multiplier: 15x (15 services)
+**Amplification investigation**: Same validation bugs repeat across 15 different microservices because each team reimplements validation logic.
 
-**Network effect found**: Knowledge trapped in individual heads
-- Leverage point: Implement blameless post-mortems (ongoing, low effort)
-- Impact: Each incident improves everyone's understanding
-- Compounding: Team gets better at prevention over time
+**Leverage point identified**: Build shared validation library once.
+- Investment: 40 hours to build and document
+- Impact: Every service gets better validation automatically when they adopt it
+- Multiplier: 15x immediate (15 services), ongoing as new services use it
 
-**Highest leverage choice**: Fix deployment first (unblocks other improvements), then shared validation (prevents most common bugs), then post-mortems (continuous learning)"
+**Network effect investigation**: Knowledge about system behavior and failure modes is trapped in individual developer heads.
 
-### Finding organizational leverage:
+**Leverage point identified**: Implement blameless post-mortem process for incidents.
+- Investment: Ongoing but low effort per incident
+- Impact: Each incident improves everyone's understanding of the system
+- Compounding: Team collectively gets better at prevention over time
 
-"**System**: Sales team struggling to close deals
+**Highest leverage sequence**: Fix deployment bottleneck first since it unblocks rapid iteration, then introduce shared validation library to prevent most common bug category, then establish post-mortems for continuous learning."
 
-**Linear approaches** (low leverage):
-- Hire more salespeople (expensive, slow)
-- Offer discounts (erodes margins)
-- More customer calls (doesn't scale)
+### Organizational efficiency
 
-**Leverage investigation**:
+"**System**: Sales team struggling to close deals despite sufficient leads.
 
-**Bottleneck found**: Sales spends 60% of time on deals that don't fit
-- Root cause: Marketing generates unqualified leads
-- Leverage point: Improve lead qualification (one person, 2 weeks)
-- Impact: Sales focuses on good-fit customers
+**Linear approaches** (expensive, slow): Hire more salespeople, offer discounts that erode margins, increase call volume without addressing conversion.
+
+**Bottleneck investigation**: Sales representatives spend 60% of time on deals with poor product fit because marketing generates unqualified leads.
+
+**Leverage point identified**: Improve lead qualification criteria and process.
+- Investment: One person, two weeks to redesign qualification
+- Impact: Sales focuses time on good-fit customers with higher close rates
 - Multiplier: 2.5x sales efficiency without hiring
 
-**Amplification found**: Salespeople recreating same materials
-- Leverage point: Create sales playbook and templates (40 hours once)
-- Impact: Every salesperson uses best practices
-- Additional: New hires productive faster
-- Multiplier: 10x (10 salespeople × faster onboarding)
+**Amplification investigation**: Each salesperson recreates the same presentation materials, proposals, and objection responses from scratch.
 
-**Compounding found**: Losing deals due to security questionnaire delays
-- Leverage point: Pre-answer common security questions (20 hours)
-- Immediate: Faster responses
-- Compound: Builds trust, enables larger deals
-- Secondary: Can pursue enterprise customers
+**Leverage point identified**: Create comprehensive sales playbook with templates.
+- Investment: 40 hours once to document best practices
+- Impact: Every current salesperson uses proven approaches, new hires become productive faster
+- Multiplier: 10x (10 salespeople plus faster onboarding)
 
-**Highest leverage**: Lead qualification (immediate 2.5x, enables focus), then sales playbook (multiplies individual effectiveness), then security materials (unlocks new segment)"
+**Compounding investigation**: Losing enterprise deals when security questionnaire responses take weeks because answers aren't documented.
 
-### Finding product leverage:
+**Leverage point identified**: Pre-answer common security and compliance questions.
+- Investment: 20 hours to document
+- Immediate impact: Faster enterprise deal cycles
+- Compound impact: Builds trust, enables larger deals, unlocks new customer segments
+- Secondary effect: Can now pursue enterprise segment that was previously inaccessible
 
-"**System**: Low user activation rate
+**Highest leverage sequence**: Lead qualification for immediate 2.5x efficiency gain, sales playbook to multiply individual effectiveness, then security documentation to unlock enterprise segment."
 
-**Obvious approaches** (moderate leverage):
-- Improve onboarding tutorial
-- Add more features
-- Better UI design
+### Product activation
 
-**Leverage investigation**:
+"**System**: User activation rate is low despite signup growth.
 
-**Root cause found**: Users succeed if they complete one key action
-- Data shows: Users who connect data source have 80% retention
-- Leverage point: Optimize specifically for first connection
+**Moderate leverage approaches**: Improve onboarding tutorial, add more features, redesign UI throughout the product.
+
+**Root cause investigation**: Data analysis reveals users who complete one specific action (connecting a data source) have 80% retention, while others have 20% retention.
+
+**Leverage point identified**: Optimize the product experience specifically for first successful data connection.
 - Instead of: Improving everything equally
-- Multiplier: Focus creates 5x higher impact
+- Focus: One critical action that predicts success
+- Multiplier: 5x higher impact through concentration of effort
 
-**Network effect found**: Users invite teammates after success
-- Leverage point: Make sharing easy after first win
-- Impact: Each successful user brings 2-3 others
-- Viral coefficient > 1 creates exponential growth
+**Bottleneck investigation**: Email verification blocks 40% of signups who never verify and never return to the product.
 
-**Bottleneck found**: Email verification blocks 40% of signups
-- Users start, never verify, never return
-- Leverage point: Allow skip or send verification later
-- Impact: 40% more users reach activation moment
-- Risk: Some spam, but worth testing
+**Leverage point identified**: Allow users to skip verification or send it after first value moment.
+- Impact: 40% more users reach the activation moment
+- Trade-off: Some spam risk, but worth testing
 
-**Template leverage**: 90% of users build same three dashboards
-- Leverage point: Provide templates instead of blank slate
-- Impact: Faster success, reveals product value immediately
-- Multiplier: Every new user benefits
+**Template investigation**: Analysis shows 90% of successful users build the same three dashboard types.
 
-**Highest leverage sequence**:
-1. Remove verification bottleneck (40% more reach activation)
-2. Add templates for common use cases (faster time to value)
-3. Optimize data connection flow (increase conversion)
-4. Add sharing after success (viral growth)
+**Leverage point identified**: Provide pre-built templates instead of blank slate.
+- Impact: Users reach success faster and see product value immediately
+- Multiplier: Every new user benefits from what previous users discovered
 
-This sequence compounds: each step increases the pool for the next step"
+**Network effect investigation**: Users who experience success invite an average of 2-3 teammates.
 
-### Finding learning leverage:
+**Leverage point identified**: Make sharing friction-free immediately after first win.
+- Impact: Each successful user brings additional users
+- Viral coefficient above 1 creates exponential growth
 
-"**System**: Team needs to improve technical skills
-
-**Low leverage**:
-- Send everyone to conferences (expensive, inconsistent)
-- Individual online courses (slow, isolated learning)
-- Lunch-and-learns (shallow, forgotten quickly)
-
-**Leverage investigation**:
-
-**Amplification point**: Senior engineer knowledge only helps when working together
-- Leverage point: Pair programming rotation (infrastructure change)
-- Impact: Skills spread across team continuously
-- Multiplier: Knowledge compounds with each rotation
-
-**Bottleneck found**: Team doesn't know what they need to learn
-- Root cause: No visibility into upcoming challenges
-- Leverage point: Quarterly tech radar review (4 hours per quarter)
-- Impact: Targeted learning, ahead of need
-- Prevention: Avoids scrambling later
-
-**Compounding opportunity**: Team learns same lessons repeatedly
-- Leverage point: Document decisions and context (ADRs)
-- Impact: Future team learns from past decisions
-- Time frame: 5-year value horizon
-- Multiplier: Every future team member benefits
-
-**Highest leverage**: Start pair rotation (immediate skill transfer), implement ADRs (builds knowledge base), add tech radar (strategic learning direction)"
+**Highest leverage sequence**: Remove verification bottleneck (40% more users reach activation moment), add templates for common use cases (faster time to value), optimize data connection flow (increase conversion of those who start), enable easy sharing after success (viral growth). This sequence compounds because each step increases the pool for the next step."
 
 ## When to use this skill
 
-- Resource constrained situations
-- Strategic planning
-- Deciding between many options
-- Team or organizational improvements
-- Technical architecture decisions
-- Process improvements
-- When effort isn't producing results
-- Startup or high-growth contexts
-- Maximizing impact of small teams
+- When resources are constrained and you need maximum impact from limited capacity
+- Before committing to plans that require significant effort to determine if there are higher-leverage alternatives
+- When current efforts aren't producing proportional results despite hard work
+- To evaluate competing priorities and identify which will create multiplicative rather than additive value
+- When planning how to help the user, to find the intervention that unlocks the most value
+- Before recommending the most obvious solution, to check if there's a leverage point being missed
+- When you notice yourself suggesting linear solutions to systemic problems

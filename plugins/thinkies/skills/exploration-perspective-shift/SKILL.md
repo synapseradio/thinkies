@@ -11,33 +11,15 @@ Systematically view situations from different angles and stakeholder viewpoints.
 
 When shifting perspectives:
 
-1. **Identify the current lens**: What perspective are you naturally taking?
-   - Technical? Business? User? System?
-   - Expert? Beginner? Outsider?
+1. **Identify the current lens** - Recognize what perspective you're naturally taking, whether it's technical versus user-focused, expert versus beginner, builder versus maintainer, or system-level versus individual-component thinking.
 
-2. **Choose contrasting viewpoints**:
-   - **User perspective**: How does this feel to use?
-   - **Builder perspective**: How hard is this to create?
-   - **Maintainer perspective**: What's the long-term burden?
-   - **Business perspective**: What's the value/cost?
-   - **Beginner perspective**: How confusing is this?
-   - **Expert perspective**: What sophistication is needed?
-   - **Outsider perspective**: What assumptions are hidden?
+2. **Choose contrasting viewpoints** - Select perspectives that fundamentally differ from your current stance, considering viewpoints like the user experiencing it, the builder creating it, the maintainer supporting it long-term, the business evaluating value and cost, the beginner encountering it fresh, the expert assessing sophistication, or the outsider seeing hidden assumptions.
 
-3. **Inhabit each perspective fully**:
-   - Use "I" statements from that viewpoint
-   - Consider their goals and constraints
-   - Feel their pain points
-   - See their definition of success
+3. **Inhabit each perspective fully** - Use "I" statements from that viewpoint to make it real, consider what goals and constraints that perspective operates under, identify what causes pain from that angle, and understand what success looks like through those eyes.
 
-4. **Note perspective conflicts**:
-   - Where do viewpoints clash?
-   - What's optimal for one but bad for another?
-   - Which tensions are fundamental vs solvable?
+4. **Note perspective conflicts** - Identify where viewpoints genuinely clash, recognize what's optimal for one perspective but problematic for another, and distinguish which tensions are fundamental trade-offs versus solvable through better design.
 
-5. **Find synthesis opportunities**:
-   - Can multiple perspectives be satisfied?
-   - What would each viewpoint need to compromise?
+5. **Find synthesis opportunities** - Consider whether multiple perspectives can be satisfied simultaneously, determine what each viewpoint would need to compromise for a workable solution, and look for approaches that honor the core needs of different perspectives even if they can't all get exactly what they want.
 
 ## Examples
 
@@ -65,11 +47,15 @@ When shifting perspectives:
 
 ## When to use this skill
 
-- Stuck in a single way of thinking
-- Need to understand stakeholder conflicts
-- Designing user experiences
-- Resolving disagreements
-- System-level problem solving
-- Empathy building
-- Finding win-win solutions
-- Breaking analysis paralysis
+- When you realize you're stuck viewing a problem from only one angle and need to deliberately shift stance
+- Before making design decisions that affect multiple stakeholders, to understand what each perspective values
+- If you're trying to resolve disagreements by understanding why different parties see the situation differently
+- When designing user experiences and need to shift between technical implementation and user perception
+- To break analysis paralysis by viewing the decision through different lenses that prioritize different factors
+- Before dismissing an objection or concern, to fully inhabit that perspective and understand its validity
+- When searching for win-win solutions by understanding what each viewpoint truly needs versus what they're requesting
+- If you catch yourself thinking "they just don't understand" about stakeholders, signaling you need to inhabit their perspective more fully
+
+## Related Skills
+
+**six-hats** - For structured thinking using six predefined modes. Use six-hats when you want systematic examination of facts, emotions, risks, benefits, creativity, and process - particularly valuable for group decision-making with shared vocabulary. perspective-shift offers more flexible viewpoint exploration where you choose which perspectives to inhabit based on the specific situation and stakeholders involved.

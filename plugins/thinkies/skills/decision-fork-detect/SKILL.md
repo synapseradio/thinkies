@@ -11,302 +11,84 @@ Identify moments where you're at a meaningful decision point, even when it doesn
 
 When detecting decision forks:
 
-1. **Notice the choice moment**:
-   - You're about to proceed in some direction
-   - Feels like the natural next step
-   - But pause: is this actually a choice?
-   - What else could you do instead?
+1. **Notice the choice moment** - Pause when something feels like the natural next step and ask whether this is actually a choice point where you could proceed in different directions, checking if you're making an active decision or just following momentum and whether you can articulate why this path versus others.
 
-2. **Identify what makes it a fork**:
-   - Paths diverge significantly from here
-   - Different paths lead to different outcomes
-   - Choice will be harder to reverse later
-   - Commits resources or shapes future options
-   - Not just "what now" but "what becomes possible"
+2. **Assess what makes it a fork** - Determine whether different paths would lead to significantly different outcomes, whether the choice will be harder to reverse later, how it commits resources or shapes future options, and whether it's about what becomes possible rather than just what happens next.
 
-3. **Map the divergent paths**:
-   - What are the distinct directions available?
-   - How do they differ?
-   - What does each path enable or foreclose?
-   - What's the default if you don't choose actively?
+3. **Map divergent paths and their consequences** - Identify the distinct directions available and how they differ, examine what each path enables or forecloses, consider what the default is if you don't choose actively, and look for hidden forks disguised as non-choices where "just" or "simply" often marks unexamined decisions.
 
-4. **Assess reversibility**:
-   - How hard to change direction later?
-   - One-way doors vs two-way doors
-   - What gets locked in?
-   - True forks are harder to reverse
-
-5. **Check if you're drifting**:
-   - Did you decide, or just continue?
-   - Are you making a choice or following momentum?
-   - Is "obvious next step" actually obvious?
-   - Could you articulate why this path vs others?
-
-6. **Look for hidden forks**:
-   - Choices disguised as non-choices
-   - "Just" or "simply" often marks hidden decisions
-   - "We always" might be unexamined default
-   - "Everyone does" might not fit your context
-
-7. **Consider timing**:
-   - Is this the right moment to fork?
-   - Forking too early commits before information
-   - Forking too late wastes effort on wrong path
-   - Some forks have a window
-
-8. **Make the fork visible**:
-   - Name the decision explicitly
-   - Write down the options
-   - Share with team or stakeholders
-   - Making it visible enables real choice
+4. **Make the fork visible and decide deliberately** - Name the decision explicitly rather than letting it happen implicitly, articulate the real question being answered (which is often deeper than the surface choice), and share with relevant stakeholders to enable genuine choice rather than drift.
 
 ## Examples
 
-### Detecting architectural fork:
+### Healthcare system redesign
 
-"**Situation**: About to add a feature to existing codebase.
+"**Situation**: Medical clinic's scheduling system needs improvement, and we're about to upgrade to the cloud version of our current software.
 
-**Initial thought**: 'I'll just add it to the UserService class.'
+**Fork detection**: This feels like a straightforward technology upgrade, but wait - is this actually shaping how the practice operates for years?
 
-**Fork detection**:
-Wait - this feels like adding to existing structure, but is this actually a fork?
-
-**What makes this a fork**:
-- This is the first feature that spans multiple domains
-- Where we put it sets a pattern others will follow
-- Affects how we think about system boundaries
-- Hard to move later once dependencies form
+**What makes this a fork**: This is the first major process change since opening, it affects both staff workflow and patient experience daily, it sets a pattern for how we adopt technology going forward, and it will be difficult to change once staff are trained and patient data is migrated.
 
 **Divergent paths**:
 
-**Path A**: Add to UserService (default/momentum)
-- Pro: Fast now
-- Con: Expands responsibility, harder to maintain
-- Enables: Continuing monolithic pattern
-- Forecloses: Clean service boundaries
+- **Upgrade current vendor's cloud system** (the default): Familiar interface requires minimal retraining, but perpetuates the same limitations we've complained about, enables continuity but forecloses workflow improvements.
 
-**Path B**: Create new BillingService
-- Pro: Clear boundaries, focused services
-- Con: More files, more structure
-- Enables: Future service extraction, clearer ownership
-- Forecloses: Simple single service approach
+- **Switch to integrated practice management platform**: Scheduling, billing, and records unified in one place with better patient data visibility, but requires major learning curve and six-month transition period.
 
-**Path C**: Create shared domain layer
-- Pro: Reusable across services
-- Con: New architectural pattern to maintain
-- Enables: Richer domain model approach
-- Forecloses: Simple CRUD patterns
+- **Build custom scheduling on top of existing records system**: Perfect fit for unique workflow needs, but ongoing development cost and maintenance burden.
 
-**The actual decision**: How do we want to handle cross-domain features?
+**The actual decision**: This isn't 'which scheduling system' - it's 'do we customize workflows to fit software, or customize software to fit workflows?'
 
-This isn't 'where does this code go' - it's 'what architectural direction are we taking?'
+**Making it visible**: Pause vendor renewal to shadow staff for one week understanding actual needs, involve both doctors and administrative staff in reviewing options, test finalists with real workflows, and document the decision rationale to guide future technology choices."
 
-**Making it visible**:
-- Pause implementation
-- Write up three approaches with trade-offs
-- Discuss with team
-- Choose deliberately, document why
-- Now everyone knows this is the pattern"
+### School curriculum decision
 
-### Detecting product fork:
+"**Situation**: Parent group requests adding coding classes to elementary curriculum, and the initial response is to fit it into existing computer lab time.
 
-"**Situation**: Customer requests a customization.
+**Fork detection**: This feels like adding a class, but does it actually reshape educational priorities and set precedent?
 
-**Initial reaction**: 'Sure, we can add a configuration flag for that.'
-
-**Fork detection**:
-This feels routine, but is this the first of many custom requests?
-
-**What makes this a fork**:
-- First request for customer-specific behavior
-- Sets precedent for how we handle custom needs
-- Affects product complexity and maintainability
-- Signals whether we're a product or services company
+**What makes this a fork**: This is the first parent-driven curriculum request, it sets precedent for how community input influences academics, it competes with other subjects for limited instructional time, and it signals whether the school follows trends or maintains core focus.
 
 **Divergent paths**:
 
-**Path A**: Add configuration flag
-- Enables: Meeting this customer need
-- Forecloses: Product simplicity
-- Leads to: More custom requests, configuration complexity
-- Long-term: Becomes semi-custom solution
+- **Add coding to computer lab rotation**: Meets parent request and stays current, but forecloses time for digital literacy and research skills, leading to more requests for trendy topics and curriculum driven by parent preferences long-term.
 
-**Path B**: Say no, keep product standard
-- Enables: Product focus, simpler codebase
-- Forecloses: This deal, maybe others
-- Leads to: Clear product identity
-- Long-term: Easier to maintain and scale
+- **Decline and focus on foundational skills**: Protects reading, math, and creative time but forecloses modern skill development and risks parent dissatisfaction and potential enrollment concerns.
 
-**Path C**: Build it as standard feature everyone gets
-- Enables: Product improvement for all
-- Forecloses: Fast custom solution
-- Leads to: Generalized feature design
-- Long-term: Product gets richer
+- **Integrate computational thinking across subjects**: Develops logic skills without dedicated class time through cross-disciplinary approach, though with less depth in technical skills specifically.
 
-**The actual decision**: What kind of product company are we?
+**The actual decision**: This isn't 'should we teach coding' - it's 'how do we balance parent input with professional educational judgment?'
 
-This isn't 'can we add this feature' - it's 'do we do customizations?'
+**Making it visible**: Present to school board rather than just principal decision, survey teaching staff on curriculum pressure and priorities, research age-appropriate skill development, define clear framework for evaluating future requests, and communicate the decision process transparently to parent community."
 
-**Making it visible**:
-- Bring to product/leadership team
-- Discuss strategy implications
-- Set policy for future requests
-- Communicate decision criteria
-- Document policy so pattern is clear"
+### Team structure decision
 
-### Detecting team fork:
+"**Situation**: Senior developer is leaving and we're about to post the same job description to hire a similar replacement.
 
-"**Situation**: Senior developer leaving, need to replace.
+**Fork detection**: This feels like replacement, but departures are actually reshaping moments for team structure.
 
-**Initial plan**: 'Post the same job description, hire similar person.'
-
-**Fork detection**:
-This feels like replacement, but is this actually a reshaping moment?
-
-**What makes this a fork**:
-- Team dynamics will shift regardless
-- Chance to rethink team structure
-- Budget exists but doesn't have to be same role
-- What we do now shapes team for years
+**What makes this a fork**: Team dynamics will shift regardless of who we hire, we have a rare chance to rethink team composition, the budget exists but doesn't have to fund the same role, and what we do now shapes the team for years.
 
 **Divergent paths**:
 
-**Path A**: Hire senior developer replacement
-- Maintains current structure
-- Needs 3-4 month search
-- Preserves technical capability
-- Forecloses using budget differently
+- **Hire senior developer replacement**: Maintains current structure and technical capability but needs three to four month search and forecloses using budget differently.
 
-**Path B**: Hire two junior developers
-- Changes team composition
-- Faster to hire
-- More capacity, less experience
-- Requires mentorship model
+- **Hire two junior developers**: Changes team composition with more capacity but less experience, faster to hire but requires establishing mentorship model.
 
-**Path C**: Promote from within, hire different role
-- Grows internal person
-- Could hire DevOps or designer instead
-- Shows career path
-- Changes team capabilities
+- **Promote from within and hire different role**: Shows internal career path and could add DevOps or design capability instead, fundamentally changing team capabilities.
 
-**Path D**: Don't replace, redistribute work
-- Use budget for tooling/contractors
-- Smaller team, better equipped
-- Tests if role was necessary
-- Changes team operating model
+- **Don't replace, redistribute work**: Use budget for tooling or contractors, test whether role was necessary, create smaller but better-equipped team.
 
-**The actual decision**: What does this team need to be?
+**The actual decision**: Not 'who replaces this person' but 'what should our team look like going forward?'
 
-Not 'who replaces X' but 'what should our team look like?'
-
-**Making it visible**:
-- Assess what departing person actually did
-- Identify what team needs vs what we had
-- Consider strategic direction
-- Involve team in discussion
-- Choose based on future needs, not past structure"
-
-### Detecting process fork:
-
-"**Situation**: Bug found in production, about to hot-fix it.
-
-**Initial response**: 'Let me push a quick fix directly to production.'
-
-**Fork detection**:
-This feels urgent, but is this a choice point about how we operate?
-
-**What makes this a fork**:
-- First production incident with new team members
-- Sets precedent for emergency response
-- Shapes culture around quality vs speed
-- Affects trust in processes
-
-**Divergent paths**:
-
-**Path A**: Emergency hotfix, skip process
-- Fixes problem now
-- Sets precedent: process can be skipped
-- Leads to: More process shortcuts
-- Long-term: Process becomes optional
-
-**Path B**: Fast-track through CI/CD
-- Fix quickly but with checks
-- Shows process enables speed
-- Leads to: Improving emergency process
-- Long-term: Trust in process
-
-**Path C**: Full process despite urgency
-- Slower fix, full review
-- Shows process is never skipped
-- Leads to: Either too slow or better process
-- Long-term: Process credibility
-
-**The actual decision**: What do we value under pressure?
-
-Not 'how to fix this bug' but 'what are our principles?'
-
-**Making it visible**:
-- Acknowledge the fork: 'We're deciding our culture here'
-- Choose based on values, not just expediency
-- Document the decision and why
-- Use this to improve process for next time
-- Make principle explicit for future incidents"
-
-### Detecting learning fork:
-
-"**Situation**: Struggling with new framework, considering going back to old approach.
-
-**Initial thought**: 'This is too hard, let's just use what we know.'
-
-**Fork detection**:
-This feels like a practical decision, but is it shaping team capability?
-
-**What makes this a fork**:
-- Decision about how team grows vs stays comfortable
-- Affects technical options for years
-- Shapes team identity
-- Influences who we can hire
-
-**Divergent paths**:
-
-**Path A**: Return to old framework
-- Immediate productivity
-- Stays in comfort zone
-- Forecloses: New patterns, modern tools
-- Long-term: Technical stagnation
-
-**Path B**: Push through learning curve
-- Short-term pain
-- Expands capabilities
-- Enables: Better tools, market relevance
-- Long-term: Growth culture
-
-**Path C**: Split approach
-- Use both frameworks
-- Reduces risk
-- Enables: Migration path
-- Long-term: Maintenance burden
-
-**The actual decision**: Does this team learn hard things?
-
-Not 'which framework' but 'what kind of engineers are we?'
-
-**Making it visible**:
-- Name the real question
-- Discuss team capability goals
-- Consider market direction
-- Make cultural choice explicit
-- Use decision to shape future learning choices"
+**Making it visible**: Assess what the departing person actually did versus what the team actually needs, identify strategic direction and future needs rather than replicating past structure, and involve team in the discussion."
 
 ## When to use this skill
 
-- Before starting implementation
-- When something feels routine but might not be
-- During planning sessions
-- When team is moving fast
-- Before committing resources
-- When facing "obvious" next steps
-- First instance of new situation
-- Strategy discussions
-- Team structure changes
-- Any time you hear "just" or "simply"
+- When something feels like the obvious next step but you haven't examined alternatives
+- Before committing resources to what seems like a routine decision
+- When you notice yourself or others using words like "just" or "simply" to describe an action
+- At the first instance of a new type of situation, since it sets precedent
+- When you're about to proceed based on momentum rather than active choice
+- Before presenting a single recommendation to the user without surfacing the actual decision being made
+- When team or organizational changes are happening that feel administrative but may be structural

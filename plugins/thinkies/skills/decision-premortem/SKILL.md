@@ -11,267 +11,100 @@ Imagine your decision has failed catastrophically, then work backwards to discov
 
 When conducting a premortem:
 
-1. **Set the future state**:
-   - Imagine it's 6-12 months from now
-   - The decision you're considering has failed badly
-   - Not just "didn't work" but "was a disaster"
-   - Make the failure vivid and specific
+1. **Set the future failure state** - Imagine it's 6 to 12 months from now and the decision has failed badly (not just "didn't work" but "was a disaster"), making the failure vivid and specific with details about stakeholder reactions and damage, then write the headline describing what happened.
 
-2. **Generate failure stories**:
-   - Write the headline: "Project X Failed Because..."
-   - Describe what the failure looks like
-   - How did stakeholders react?
-   - What's the damage?
-   - Be creative and pessimistic
+2. **Work backwards through failure modes** - Given this catastrophic outcome, trace what sequence of events must have led here and what early warning signs were missed, identifying technical failures, people and team failures, process breakdowns, external or market shifts, and timing issues, since failures usually compound from multiple causes rather than single points.
 
-3. **Work backwards**:
-   - Given this failure, what must have happened?
-   - What sequence of events led here?
-   - What early warning signs were missed?
-   - What assumptions were wrong?
+3. **Surface hidden assumptions and preventable causes** - Examine what you assumed would go right, what you assumed wouldn't change, what dependencies you took for granted, and what you didn't know you needed to know, then distinguish what you could control from what was outside your control to focus mitigation on preventable failures.
 
-4. **Identify failure modes**:
-   - Technical failures
-   - People/team failures
-   - Process failures
-   - External/market failures
-   - Timing failures
-   - Usually multiple causes compound
-
-5. **Surface hidden assumptions**:
-   - What did you assume would go right?
-   - What did you assume wouldn't change?
-   - What dependencies did you take for granted?
-   - What did you not know you needed to know?
-
-6. **Look for preventable vs inevitable**:
-   - What could you control?
-   - What was outside your control?
-   - What were early indicators?
-   - Focus mitigation on preventable failures
-
-7. **Design interventions**:
-   - What could prevent each failure mode?
-   - What early warning systems?
-   - What contingency plans?
-   - What would you do differently from the start?
-
-8. **Pressure test the plan**:
-   - Does your actual plan address these failure modes?
-   - Are you over-confident somewhere?
-   - What are you still vulnerable to?
+4. **Design interventions and pressure test the plan** - For each identified failure mode, determine what could prevent it, what early warning systems could detect it, what contingency plans could contain it, and what you would do differently from the start, then check whether your actual plan addresses these risks or whether you're still vulnerable due to overconfidence.
 
 ## Examples
 
-### Premortem for microservices migration:
+### Infrastructure migration
 
-"**The future**: It's 12 months from now. The microservices migration has failed catastrophically.
+"**The future**: 12 months from now, our microservices migration has failed catastrophically.
 
-**Failure story**:
-'Company announces rollback to monolith after 10-month disaster. Engineering velocity dropped 60%. Three major outages. CTO departed. Team morale at all-time low. Investors questioning technical leadership.'
+**Failure headline**: 'Company announces rollback to monolith after 10-month disaster. Engineering velocity dropped 60%. Three major outages. CTO departed. Team morale at all-time low. Investors questioning technical leadership.'
 
-**Working backwards - What happened?**
+**Working backwards - what happened?**
 
-**Technical failure path**:
-- Distributed tracing was never set up properly
-- Debugging production issues took days instead of hours
-- Services had circular dependencies nobody mapped
-- Data consistency issues led to corruption
-- No one understood the full system anymore
+**Technical failure path**: Distributed tracing was never properly implemented, making debugging take days instead of hours. Services had circular dependencies nobody mapped upfront. Data consistency issues led to corruption. System became too complex for anyone to fully understand.
 
-**People failure path**:
-- Senior engineer who understood monolith left in month 3
-- Knowledge was in their head, not documented
-- Remaining team struggled with distributed systems
-- Hired contractors who made it worse
-- Team burned out from constant firefighting
+**People failure path**: Senior engineer who understood the monolith left in month three, taking undocumented knowledge with them. Remaining team lacked distributed systems expertise. Hired contractors who made architecture worse. Team burned out from constant firefighting.
 
-**Process failure path**:
-- Migrated everything at once instead of incrementally
-- No rollback plan
-- Testing didn't catch distributed system issues
-- No one owned cross-service concerns
-- Communication overhead exploded
+**Process failure path**: Migrated everything at once instead of incremental rollout. No rollback plan existed. Testing didn't catch distributed system issues. Nobody owned cross-service concerns. Communication overhead exploded.
 
-**Assumption failures**:
-- Assumed team had distributed systems expertise
-- Assumed observability tools would be easy to set up
-- Assumed services could be independent (wrong boundaries)
-- Assumed performance would improve (got worse)
-- Assumed we had a scaling problem (we didn't)
+**Assumption failures**: Assumed team had distributed systems expertise (they didn't), assumed observability tools would be easy to add (they weren't), assumed services could be truly independent (wrong boundaries), assumed performance would improve (it got worse), assumed we had a scaling problem (we didn't actually need microservices).
 
-**Early warning signs that were missed**:
-- First service took 3x longer than estimated
-- Team asking questions showed knowledge gaps
-- Observability POC revealed tooling complexity
-- Load testing showed latency increases
-- Team expressed concerns but pushed forward
-
-**What should have prevented this**:
-
-Before starting:
-- Validate we actually have the problem microservices solve
-- Ensure team has distributed systems experience or training plan
-- Prove observability tooling works in POC
-- Define service boundaries based on data and team structure
-
-During migration:
-- Migrate one service as full learning experience
-- Document learnings and update approach
-- Create rollback checkpoints
-- Stop if early signals are bad
-- Measure velocity and system reliability continuously
-
-Safety nets:
-- Keep monolith running in parallel initially
-- Automated testing for distributed scenarios
-- Observability before migration, not after
-- Regular architecture review checkpoints
-- Clear success/failure criteria to decide continuation"
-
-### Premortem for hiring decision:
-
-"**The future**: 6 months later, this hire was a disaster.
-
-**Failure story**:
-'New senior engineer left after 5 months. Delivered nothing production-ready. Created conflicts with team. Left codebase more complex. Lost time and money.'
-
-**Working backwards**:
-
-**Technical mismatch**:
-- Their expertise was in different tech stack
-- Couldn't adapt to our architecture patterns
-- Over-engineered solutions for our scale
-- Didn't understand our domain constraints
-- Code reviews became arguments
-
-**Culture mismatch**:
-- Solo work style in collaborative team
-- Dismissed existing code as "legacy"
-- Didn't invest in relationships
-- Team stopped asking them for help
-- Became isolated
-
-**Expectation mismatch**:
-- Expected greenfield projects, got maintenance
-- Expected architectural authority, team resisted
-- Expected different technologies than we use
-- Expected autonomy, we needed collaboration
-- Expected mentorship role we didn't need
-
-**Process failure**:
-- Interview focused on algorithms, not collaboration
-- Didn't check cultural fit deeply
-- Reference calls were superficial
-- Didn't involve team in decision
-- Rushed because role was open too long
-
-**Hidden signals missed**:
-- Job hopping every 18 months
-- In interviews, criticized past teams
-- Didn't ask questions about team or codebase
-- Portfolio showed individual projects only
-- References were vague about teamwork
-
-**What could prevent this**:
-
-Interview process:
-- Pair programming session on real codebase problem
-- Team lunch to assess cultural fit
-- Discuss actual challenges, not hypotheticals
-- Deep reference checks on collaboration
-- Have team vote on hire
-
-Onboarding design:
-- 30-60-90 day goals and checkpoints
-- Assigned peer for cultural integration
-- Start with small, real problems
-- Regular feedback both directions
-- Clear expectations in writing
-
-Early warning system:
-- Weekly 1:1s in first month
-- Team feedback at 30 days
-- Review code patterns for alignment
-- Monitor relationship health
-- Address concerns immediately, not after months"
-
-### Premortem for product launch:
-
-"**The future**: 8 months later, product launch completely failed.
-
-**Failure story**:
-'Product shut down after 7 months. Fewer than 100 active users. Burned $2M in development. Team reassigned. Customers uninterested.'
-
-**Working backwards**:
-
-**Market failure**:
-- Customers said they wanted it, but didn't actually buy
-- Pricing was way off (too high or too low)
-- Market timing was wrong
-- Competitors launched similar product first with more features
-- Didn't solve painful enough problem
-
-**Product failure**:
-- Built what we thought users needed, not what they needed
-- Too complex for target users
-- Missing critical features
-- Poor performance at scale
-- Incompatible with their existing workflows
-
-**Go-to-market failure**:
-- Wrong distribution channel
-- Marketing message didn't resonate
-- Sales team couldn't explain value
-- No one knew how to buy it (procurement friction)
-- Support couldn't handle questions
-
-**Assumption failures**:
-- Assumed people having problem meant they'd pay
-- Assumed we understood customer workflow
-- Assumed our solution was differentiated
-- Assumed we could reach customers
-- Assumed first version would be good enough
-
-**What was missed**:
-- Beta users were too polite with feedback
-- Didn't test with paying customers
-- Didn't validate pricing before building
-- Didn't check procurement process
-- Didn't have metrics for success
+**Early warning signs missed**: First service took three times longer than estimated. Team questions revealed knowledge gaps. Observability proof-of-concept showed tooling complexity. Load testing revealed latency increases. Team expressed concerns but momentum pushed forward anyway.
 
 **Prevention strategy**:
 
-Before building:
-- Validate willingness to pay (pre-orders, pilots)
-- Shadow customers doing the work now
-- Test core value prop with prototype
-- Map competitive landscape deeply
-- Understand buying process
+Before starting: Validate we actually have the problem microservices solve, ensure team has distributed systems experience or create training plan, prove observability tooling works in realistic proof-of-concept, define service boundaries based on actual data flows and team structure.
 
-During building:
-- Weekly contact with target users
-- Monthly usability testing
-- Metrics from day one
-- Beta with paying customers
-- Regular build vs buy checks
+During migration: Migrate one service as full learning experience, document learnings and update approach based on reality, create rollback checkpoints at each phase, establish clear stop criteria if early signals are bad, measure velocity and reliability continuously rather than assuming improvement.
 
-Launch criteria:
-- 10 customers pre-committed to buy
-- Core workflow validated in real environment
-- Support processes tested
-- Clear metrics for success/failure
-- Kill decision criteria defined upfront"
+Safety nets: Keep monolith running in parallel initially, create automated testing for distributed scenarios, implement observability before migration not after, schedule regular architecture review checkpoints, define clear success and failure criteria upfront to enable objective decision about continuation."
+
+### Key hire decision
+
+"**The future**: 6 months later, this hire was a disaster.
+
+**Failure headline**: 'New senior engineer left after 5 months. Delivered nothing production-ready. Created conflicts with team. Left codebase more complex. Lost time and money.'
+
+**Working backwards**:
+
+**Technical mismatch**: Their expertise was in different technology stack. Couldn't adapt to our architecture patterns. Over-engineered solutions for our scale. Didn't understand our domain constraints. Code reviews became arguments about approach rather than collaboration.
+
+**Culture mismatch**: Solo work style in collaborative team environment. Dismissed existing code as inferior without understanding context. Didn't invest in building relationships. Team stopped asking them for help. Became isolated.
+
+**Expectation mismatch**: Expected greenfield projects, got maintenance work. Expected architectural authority, but team resisted changes. Expected different technologies than we actually use. Expected autonomy, but we needed collaboration. Expected to be mentor when we didn't need that role.
+
+**Process failure**: Interview focused on algorithm skills rather than collaboration ability. Didn't assess cultural fit deeply enough. Reference calls were superficial checkbox exercise. Didn't involve team in decision. Rushed hiring because role was open too long and pressure was mounting.
+
+**Hidden signals missed during interview**: Job history showed moves every 18 months. In interviews, primarily criticized past teams rather than discussing collaboration. Didn't ask questions about our team dynamics or codebase. Portfolio showed only individual projects, no team work. References were vague about teamwork when asked specifically.
+
+**Prevention strategy**:
+
+Interview redesign: Include pair programming session on real codebase problem, have team lunch to assess cultural fit naturally, discuss actual current challenges rather than hypotheticals, conduct deep reference checks specifically about collaboration and conflict resolution, give team voting power on hire decision.
+
+Onboarding design: Set clear 30-60-90 day goals and checkpoints in writing, assign peer specifically for cultural integration not just technical onboarding, start with small real problems rather than big architecture projects, establish regular two-way feedback from day one, write down explicit expectations about working style.
+
+Early warning system: Weekly one-on-ones in first month to surface issues early, gather team feedback at 30-day mark, review code patterns for alignment with team practices, monitor relationship health indicators, address concerns immediately rather than hoping they resolve over months."
+
+### Product launch
+
+"**The future**: 8 months later, our product launch completely failed.
+
+**Failure headline**: 'Product shut down after 7 months. Fewer than 100 active users. Burned $2M in development budget. Team reassigned to other projects. Customers showed no interest despite initial positive feedback.'
+
+**Working backwards**:
+
+**Market failure**: Customers said they wanted it in interviews but didn't actually buy when available. Pricing was completely wrong (either too high or too low). Market timing was off. Competitors launched similar product first with more features and better go-to-market. Problem wasn't painful enough for customers to change behavior.
+
+**Product failure**: Built what we thought users needed rather than validating real needs. Too complex for target users to understand value. Missing critical features that customers assumed would be included. Performance degraded at realistic scale. Didn't integrate with their existing workflows, creating adoption friction.
+
+**Go-to-market failure**: Used wrong distribution channel for this buyer. Marketing message didn't resonate with actual decision makers. Sales team couldn't explain value proposition clearly. Nobody understood how to navigate their procurement process. Support team couldn't handle technical questions, eroding trust.
+
+**Assumption failures**: Assumed people having a problem meant they'd pay to solve it (they wouldn't), assumed we understood customer workflow from brief interviews (we didn't), assumed our solution was differentiated (it wasn't enough), assumed we could reach customers easily (we couldn't), assumed first version would be good enough to gain traction (it wasn't).
+
+**Missed validations**: Beta users were too polite with feedback and didn't reveal real issues. Didn't test with paying customers who have actual budget constraints. Didn't validate pricing before building. Didn't understand procurement process complexity. Didn't establish success metrics upfront, so couldn't recognize failure early enough to pivot.
+
+**Prevention strategy**:
+
+Before building: Validate willingness to pay through pre-orders or paid pilots, shadow customers doing the work today to understand real workflow, test core value proposition with prototype before full build, map competitive landscape deeply including why alternatives are currently winning, understand complete buying process including procurement and legal.
+
+During building: Maintain weekly contact with target users throughout development, run monthly usability testing with realistic scenarios, implement metrics from day one to measure actual usage patterns, conduct beta with paying customers who have skin in the game, perform regular build versus buy checks to validate continued investment.
+
+Launch criteria: Secure 10 customers pre-committed to purchase, validate core workflow in their real environment, test support processes with realistic question load, establish clear metrics for success and failure with specific thresholds, define kill decision criteria upfront while objective rather than when emotionally invested."
 
 ## When to use this skill
 
-- Major decisions or projects
-- Before significant investment
-- Launching new products or features
-- Organizational changes
-- Technical architecture decisions
-- Hiring key roles
-- Mergers or partnerships
-- Anytime optimism feels too high
-- When stakes are high
-- Planning complex initiatives
+- Before major decisions or significant project investments to surface hidden risks
+- When optimism about a plan feels unusually high and assumptions aren't being questioned
+- Before launching new products, features, or organizational changes with substantial resources committed
+- When planning complex initiatives where failure modes aren't obvious from normal analysis
+- To pressure test your recommendations before presenting them to the user
+- When you notice yourself making confident assertions about outcomes without examining what could go wrong
+- Before committing to architectural decisions or key hires that are difficult to reverse

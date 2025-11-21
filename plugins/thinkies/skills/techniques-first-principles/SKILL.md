@@ -55,73 +55,74 @@ Strip away assumptions to reveal what's actually true, then rebuild your underst
 
 ## Examples
 
-### Rethinking API design:
+### Transportation planning
 
-**Current approach**: "We need to version our API. The standard is to put v1, v2 in the URL path. When we make breaking changes, we increment the version."
+**Current approach**: "Traffic is terrible. We need to widen the highway. Add more lanes to reduce congestion."
 
 **Question assumptions**:
-- Why do breaking changes require new versions?
-- Why do versions go in the URL?
-- Why do all endpoints version together?
-- What problem does versioning actually solve?
+- Why do more lanes reduce congestion?
+- Why is car traffic the problem to solve?
+- Why does everyone travel at the same time?
+- What problem does the highway actually solve?
 
 **Fundamental truths**:
-- Clients depend on specific behavior
-- Code evolves and changes
-- Breaking client code is bad
-- Maintaining many versions is expensive
-- The actual constraint: "don't break existing clients while improving the API"
+- People need to get from A to B
+- Limited space for vehicles
+- Travel takes time
+- Infrastructure has capacity limits
+- The actual constraint: "move people efficiently through limited space"
 
-**Reason from basics**: "If the only real requirement is 'don't break existing clients,' what actually achieves that? We could: add new fields without removing old ones, accept both old and new formats, make changes backward compatible, version individual fields instead of entire endpoints, let clients specify what they support. The conventional 'v1/v2' approach is one solution, but not the only one."
+**Reason from basics**: "If the goal is 'move people efficiently,' cars are one solution but not the only one. What actually moves people? Cars (1 person, 15 feet), buses (40 people, 40 feet), trains (200 people, 100 feet), bikes (1 person, 6 feet). Adding lanes increases capacity briefly, then induces demand - more people drive because traffic is lighter, filling the new lanes. The constraint isn't lane count, it's space per person."
 
-**New approach**: "Use backward-compatible evolution. Add new optional fields. Deprecated fields stay forever but return null. Clients declare capabilities via headers. Never need v2 because nothing breaks. Only version when truly incompatible formats needed, and do it per-endpoint, not API-wide."
+**New approach**: "Maximize people per square foot. Dedicate lanes to buses - move 10x more people in same space. Add bike lanes - move people using less space. Zone for density near transit. Price parking to reflect true cost. More lanes actually worsens the problem by encouraging the least efficient mode."
 
-**Compare**: Conventional approach assumes changes must break things and versions must be global. First principles reveals that's only one path. The new approach trades field proliferation for version maintenance.
+**Compare**: Conventional approach assumes car throughput is the goal. First principles reveals people throughput is the goal, and cars are inefficient. New approach optimizes for the actual constraint.
 
-### Rethinking authentication:
+### Classroom behavior
 
-**Current approach**: "Users need passwords. We'll hash them with bcrypt, have a forgot-password flow, enforce complexity requirements, require changes every 90 days."
+**Current approach**: "Students are disruptive. We need stricter discipline - more detentions, clearer consequences, firmer boundaries."
 
 **Question assumptions**:
-- Why do users need passwords?
-- Why does the password live in our database?
-- Why do WE authenticate users?
-- Why is this our responsibility?
+- Why do students disrupt class?
+- Why is discipline the solution?
+- Why are consequences the tool we use?
+- What problem are we actually solving?
 
 **Fundamental truths**:
-- We need to know who is making requests
-- We need to prevent unauthorized access
-- Users need a way to prove identity
-- The actual constraint: "reliably identify users without friction"
+- Students need to learn
+- Disruption prevents learning
+- Behavior has causes
+- Punishment doesn't address causes
+- The actual constraint: "create conditions where learning happens"
 
-**Reason from basics**: "If the goal is just 'identify users reliably,' passwords are one solution, but they shift security burden to users and us. What else identifies uniquely? Email they control. Phone they possess. Hardware token they own. Biometrics. We could send a login link to their email - proves they control it. We could use magic links exclusively - no password to store, hash, forget, or crack."
+**Reason from basics**: "If the goal is 'learning happens,' discipline is one approach but addresses symptoms. What causes disruption? Boredom (material too easy), confusion (material too hard), physical needs (hunger, sleep), social needs (attention, status), trauma responses. We could: make material engaging, adjust difficulty, ensure basic needs met, teach emotional regulation, build relationships. Punishment might suppress behavior without creating learning conditions."
 
-**New approach**: "Passwordless authentication via email magic links. User enters email, we send a time-limited token. Click link, you're in. No passwords to manage, no password resets, no complexity requirements, no password database to breach. Trust the email provider's security."
+**New approach**: "Understand the function of behavior first. Student disrupts because confused? Adjust teaching. Because bored? Provide challenge. Because hungry? Keep snacks available. Because needs attention? Build connection outside conflict. Address causes, not symptoms. Discipline becomes rare because conditions support learning."
 
-**Compare**: Conventional approach assumes we must store and verify secrets. First principles shows we can delegate to email providers. Trades one security problem (password management) for another (email account security), but users already secure their email.
+**Compare**: Conventional approach assumes students choose to disrupt and consequences change choices. First principles reveals behavior serves functions and changing conditions changes behavior. New approach requires understanding needs, not just enforcing rules.
 
-### Rethinking meeting scheduling:
+### Food waste reduction
 
-**Current approach**: "Finding meeting times is hard. We need a tool that checks everyone's calendar, finds overlaps, sends invites. Use Calendly or similar."
+**Current approach**: "We waste too much food. Run a campaign encouraging people to waste less. Share tips on meal planning and proper storage."
 
 **Question assumptions**:
-- Why do we need everyone at the same time?
-- Why does it need to be synchronous?
-- Why is finding overlap the problem we're solving?
+- Why do people waste food?
+- Why is individual behavior the problem?
+- Why do we assume people choose to waste?
 - What's the actual goal?
 
 **Fundamental truths**:
-- We need to exchange information or make decisions
-- People have different schedules
-- Time is limited
-- Context switching is expensive
-- The actual constraint: "effectively collaborate given different schedules"
+- Food perishes over time
+- People buy more than they eat
+- Confusion about safety leads to disposal
+- Large portions exceed appetite
+- The actual constraint: "ensure food gets eaten before it perishes"
 
-**Reason from basics**: "If the goal is 'effective collaboration,' real-time presence is one approach but not always needed. What actually requires synchronous time? Brainstorming, heated debate, building rapport. What doesn't? Status updates, information sharing, most decisions. We could: async document collaboration, recorded video updates, discussion threads with clear decision deadlines, only meet for genuine synchronous work."
+**Reason from basics**: "If the goal is 'food gets eaten,' individual choice is one factor but not the only one. What causes waste? Unclear expiration dates (people toss safe food). Large packages (spoils before use). Visual standards (grocery stores reject cosmetically imperfect produce). Rigid planning (life changes, plans don't). We could: clarify date labels, offer smaller portions, sell imperfect produce, make surplus redistribution easy."
 
-**New approach**: "Default to async. Write the proposal in a doc, give people 48 hours to comment, make the decision. Use meetings only for: complex disagreements, creative brainstorming, or sensitive conversations. Stop trying to optimize calendar Tetris; optimize for the outcome."
+**New approach**: "Change the system, not behavior. Standardize date labels so people know what's actually unsafe. Let stores sell small portions. Create infrastructure for surplus food to reach food banks. Allow restaurants to donate leftovers safely. Make the easy choice the less wasteful choice."
 
-**Compare**: Conventional wisdom treats meetings as default. First principles reveals most "meetings" are information transfer that doesn't need synchronous time. New approach eliminates most scheduling problems by eliminating most meetings.
+**Compare**: Conventional approach assumes waste is an education problem. First principles reveals it's often a system design problem. New approach changes defaults rather than asking people to fight against them.
 
 ### Rethinking deployment:
 
@@ -170,13 +171,16 @@ Strip away assumptions to reveal what's actually true, then rebuild your underst
 
 ## When to use this skill
 
-- Challenging industry conventions
-- Designing novel solutions
-- When "best practices" don't fit your context
-- Breaking through innovation barriers
-- Questioning expensive or complex systems
-- Simplifying over-engineered solutions
-- Understanding why things work the way they do
-- Finding creative solutions to constraints
-- Avoiding cargo-cult engineering
-- Building something genuinely new
+- When you find yourself saying "that's just how it's done" without knowing why
+- Before accepting industry conventions or best practices that feel wrong for your context
+- When existing solutions are expensive, complex, or poorly matched to the actual problem
+- When you notice cargo-cult patterns (copying without understanding)
+- Before committing to major architectural decisions based on what others do
+- When the "obvious" solution feels over-engineered for the problem at hand
+- To understand the actual constraints versus inherited assumptions
+- When innovation requires breaking free from conventional approaches
+- Before building something genuinely new that has no established patterns
+
+## Related Skills
+
+**socratic** - For testing and validating existing reasoning through systematic questioning. Use socratic when you need to examine whether a proposed approach is sound, challenge assumptions in existing plans, or validate reasoning. first-principles is generative (building new solutions from fundamental truths), while socratic is analytical (testing existing claims and reasoning through questioning).

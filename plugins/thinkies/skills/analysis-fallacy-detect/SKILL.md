@@ -11,77 +11,61 @@ Spot common logical errors that undermine reasoning and arguments.
 
 When detecting fallacies:
 
-1. **Examine the argument structure**:
-   - What's the claim?
-   - What's the supporting reasoning?
-   - How are they connected?
+1. **Examine the argument structure** - Identify the claim being made, the supporting reasoning offered, and how the reasoning connects to the conclusion.
 
-2. **Check for common fallacies**:
-   - **False dichotomy**: "Either A or B" when other options exist
-   - **Slippery slope**: "A will inevitably lead to Z"
-   - **Ad hominem**: Attacking the person not the argument
-   - **Straw man**: Misrepresenting position to defeat it easily
-   - **Appeal to authority**: "Expert says so" without evidence
-   - **Correlation/causation**: "A and B occur together, so A causes B"
-   - **Hasty generalization**: Drawing broad conclusions from few examples
-   - **Circular reasoning**: Using conclusion as premise
-   - **Appeal to emotion**: Using fear/anger/pity instead of logic
-   - **Survivorship bias**: Only seeing successes, not failures
+2. **Check for common fallacy patterns** - Look for false dichotomy (either/or when other options exist), slippery slope (claiming A inevitably leads to Z), ad hominem (attacking the person not the argument), straw man (misrepresenting a position to defeat it easily), appeal to authority (expert opinion without evidence), correlation assumed as causation, hasty generalization (broad conclusions from limited examples), circular reasoning (using the conclusion as a premise), appeal to emotion (using fear or sympathy instead of logic), or survivorship bias (only observing successes while ignoring failures).
 
-3. **Identify the specific flaw**:
-   - Where exactly does logic break down?
-   - What's being assumed incorrectly?
-   - What's being ignored or hidden?
+3. **Identify the specific flaw and what's being hidden** - Determine where exactly the logic breaks down, what's being assumed incorrectly, and what relevant information is being ignored or obscured.
 
-4. **Consider if it might be valid**:
-   - Sometimes apparent fallacies aren't
-   - Context and domain matter
-   - Check if there's hidden valid reasoning
+4. **Consider whether the reasoning might actually be valid** - Check if context makes what appears fallacious actually sound, whether domain-specific knowledge justifies the inference, or if there's valid reasoning that wasn't immediately apparent.
 
-5. **Explain the problem clearly**:
-   - Show why the reasoning fails
-   - Provide counter-example if helpful
-   - Suggest how to fix the argument
+5. **Explain the problem and suggest corrections** - Show why the reasoning fails, provide counter-examples if helpful, and indicate how the argument could be strengthened with valid reasoning.
 
 ## Examples
 
-### Detecting fallacies in technical discussions:
-"**Argument**: 'Google uses microservices, so we should too'
+### Product development
 
-**Fallacy detected**: Appeal to authority + false analogy
-- Google's context isn't ours
-- Their success doesn't prove it's right for us
-- Ignores companies that failed with microservices
+"**Argument**: 'Our competitor shipped this feature, so we need it too or we'll lose customers'
 
-**The flaw**: What works at Google's scale with their resources might not work for a 10-person startup. Need evidence it solves OUR problems, not that it works somewhere else."
+**Fallacy detected**: Hasty generalization + false dichotomy
+- Assumes all customers value what competitor's customers value
+- Presents binary choice: copy feature or lose market share
+- Ignores different customer segments, use cases, strategic positioning
+- Doesn't consider whether competitor's feature actually succeeded
 
-### Detecting fallacies in decision-making:
-"**Argument**: 'If we don't implement blockchain now, we'll be left behind and eventually go out of business'
+**The flaw**: Markets aren't homogeneous. Competitor's feature choice reflects their strategy and customers, which may differ from yours. Valid response requires understanding whether your customers actually need this feature and whether it aligns with your product direction."
 
-**Fallacy detected**: Slippery slope + false dichotomy
-- Assumes not using blockchain → failure (slippery slope)
-- Presents only two options: blockchain or death (false dichotomy)
-- Ignores successful companies without blockchain
+### Environmental regulation
 
-**The flaw**: No evidence that blockchain adoption correlates with success in our industry. Many paths to remaining competitive."
+"**Argument**: 'This factory produces jobs and economic growth. Shutting it down over pollution concerns would destroy the local economy'
 
-### Detecting subtle fallacies:
-"**Argument**: 'This approach has never failed for us before'
+**Fallacy detected**: False dichotomy + appeal to consequences
+- Frames choice as operate-as-is or complete shutdown
+- Ignores emissions controls, process improvements, phased compliance
+- Uses economic harm to avoid addressing pollution evidence
+- Assumes current operation mode is only economically viable option
 
-**Fallacy detected**: Survivorship bias + hasty generalization
-- Only remembering times we used it successfully
-- Forgetting times we didn't try it due to obvious unsuitability
-- Small sample size being treated as proof
+**The flaw**: Regulatory compliance rarely requires binary all-or-nothing decisions. The economic argument, while containing real concerns, is used to bypass evaluation of whether pollution levels are acceptable and what mitigation options exist between extremes."
 
-**The flaw**: Past success in different contexts doesn't guarantee future success. Also, we might not remember failures or times we correctly avoided this approach."
+### Research interpretation
+
+"**Argument**: 'The study was funded by the industry, so we should dismiss the findings'
+
+**Fallacy detected**: Ad hominem (genetic fallacy)
+- Attacks funding source rather than methodology or evidence
+- Assumes funding automatically invalidates findings
+- Ignores that methodology can be evaluated independently
+- Doesn't consider whether findings replicate across independent studies
+
+**The flaw**: Funding source warrants scrutiny for bias, but doesn't automatically invalidate results. Valid criticism requires examining the actual methodology, data, and whether findings align with independent research. Industry funding is a reason for careful evaluation, not automatic dismissal."
 
 ## When to use this skill
 
-- Evaluating arguments or proposals
-- Design reviews and decision meetings
-- Debugging reasoning about problems
-- Reading research or opinion pieces
-- Analyzing post-mortems
-- Challenging groupthink
-- Vendor pitch evaluation
-- Risk assessment discussions
+- When you notice yourself constructing an argument that feels persuasive but may rely on rhetorical shortcuts rather than sound logic
+- Before presenting either/or choices to verify you haven't artificially narrowed options into a false dichotomy
+- When you catch yourself using phrases like "everyone knows" or "obviously" that might mask hasty generalizations
+- Before citing expert opinion or authority without examining the underlying evidence
+- When noticing that your reasoning about causation is based primarily on correlation or temporal sequence
+- To check whether you're attacking an idea's merit versus its source or proponent
+- Before presenting an argument that relies on projected consequences to verify you're not engaging in slippery slope reasoning
+- When reviewing your own analysis to ensure you haven't cherry-picked evidence that supports your preferred conclusion

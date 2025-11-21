@@ -11,50 +11,17 @@ Move toward truth by examining opposing positions and synthesizing a higher unde
 
 Work through thesis, antithesis, and synthesis to develop more complete understanding:
 
-1. **State the thesis clearly**:
-   - What is the initial position or claim?
-   - What are its core arguments?
-   - What does it explain well?
-   - What are its strengths?
-   - "The thesis is that X because Y"
+1. **State the thesis clearly** - Articulate the initial position with its core arguments, what it explains well, and its strengths.
 
-2. **Develop the antithesis**:
-   - What is the opposing position?
-   - What are its core arguments?
-   - What does IT explain well?
-   - What does it reveal that thesis missed?
-   - Not just negation - a genuine alternative view
-   - "The antithesis is that NOT-X because Z"
+2. **Develop the antithesis** - Present the opposing position as a genuine alternative view with its own core arguments, not just negation, showing what it explains well and reveals that thesis missed.
 
-3. **Examine the conflict**:
-   - Where exactly do thesis and antithesis contradict?
-   - What does each position get right?
-   - What does each position miss or oversimplify?
-   - Are they answering different questions?
-   - Are they operating on different assumptions?
-   - "They disagree about [specific point]"
+3. **Examine the conflict** - Identify where exactly they contradict, what each position gets right or misses, whether they're answering different questions or operating on different assumptions.
 
-4. **Identify deeper truth**:
-   - What higher-level understanding resolves the contradiction?
-   - Is this a false dichotomy?
-   - Are both partially right in different contexts?
-   - What does the conflict itself reveal?
-   - What question would make the conflict disappear?
-   - "The real issue is actually about [deeper concept]"
+4. **Identify deeper truth** - Determine what higher-level understanding resolves the contradiction, whether this is a false dichotomy, whether both are partially right in different contexts, and what the conflict itself reveals.
 
-5. **Construct the synthesis**:
-   - What new position incorporates insights from both?
-   - How does this transcend the either/or framing?
-   - What does this synthesis explain that neither alone could?
-   - Does this create new questions to examine?
-   - "The synthesis is that [new understanding]"
+5. **Construct the synthesis** - Build a new position that incorporates insights from both, transcends the either/or framing, and explains what neither alone could.
 
-6. **Test the synthesis**:
-   - Does this account for what thesis got right?
-   - Does this account for what antithesis got right?
-   - Does this resolve the original conflict?
-   - What new tensions does it create?
-   - "This new view might itself be a thesis for further refinement"
+6. **Test the synthesis** - Verify it accounts for what each side got right, resolves the original conflict, and identify what new tensions or questions it creates.
 
 ## Examples
 
@@ -116,13 +83,12 @@ Work through thesis, antithesis, and synthesis to develop more complete understa
 
 ## When to use this skill
 
-- Resolving team disagreements
-- Getting past polarized debates
-- Refining your own thinking when you see merit in opposing views
-- Design decisions with valid competing concerns
-- Strategic planning with different stakeholder priorities
-- Philosophical or architectural debates
-- Finding the truth between extremes
-- Transcending false dichotomies
-- Developing nuanced positions
-- Moving conversations past "you're wrong, I'm right"
+- When team members advocate for opposing approaches and both arguments seem valid
+- Before dismissing a contrary position when you notice it has merit despite disagreeing with it
+- When debates become polarized and people talk past each other rather than toward understanding
+- When design decisions face competing concerns that each matter rather than one clearly dominating
+- Before choosing between options when you suspect the choice itself is the problem
+- When strategic planning surfaces different stakeholder priorities that seem incompatible
+- When you catch yourself thinking in binary terms and "between extremes" might miss the point
+- Before advocating for your position when the other side raises points you can't easily dismiss
+- When architectural or philosophical debates generate more heat than light and need reframing

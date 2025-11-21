@@ -226,14 +226,12 @@ Reality: Maintain what exists. Minimal new features. Focus on security patches. 
 
 ## When to use this skill
 
-- Strategic planning under uncertainty
-- Long-term decision making
-- Risk assessment and preparation
-- Testing strategy robustness
-- Investment decisions with unclear future
-- Organizational planning
-- Market entry decisions
-- Technology adoption planning
-- Avoiding over-commitment to single forecast
-- Building adaptive capability
-- Preparing for multiple possible futures
+- Before committing significant resources to a plan that assumes a particular future
+- When you notice yourself making predictions with unwarranted confidence about uncertain factors
+- When a decision has long-term consequences and the environment could shift dramatically
+- To test whether your strategy is robust or fragile across different possible futures
+- When you find yourself saying "the market will..." or "users will..." as if it's certain
+- Before investment decisions where multiple critical factors are genuinely unknowable
+- When you need to identify early warning signals that would change your approach
+- To avoid over-commitment to a single forecast or scenario
+- When planning needs to accommodate multiple plausible futures rather than betting on one

@@ -11,107 +11,110 @@ Create multiple plausible explanations for the same observations or evidence.
 
 When generating alternatives:
 
-1. **Start with the current explanation**: What's the existing theory about why something happens?
-   - State it clearly
-   - Note what evidence supports it
+1. **State the current explanation and what needs explaining** - Articulate the existing theory clearly, noting what evidence supports it, then identify the key observations, patterns, and surprising elements that any explanation must account for.
 
-2. **Identify what needs explaining**:
-   - What are the key observations?
-   - What patterns need accounting for?
-   - What's surprising or unexpected?
+2. **Generate diverse alternatives through multiple lenses** - Create different explanations by varying the mechanism (same outcome, different cause), scope (more specific or general), timing (earlier or later cause), considering multiple causes working together, reverse causation where the effect might be the cause, pure coincidence where the pattern isn't real, or selection bias where you're seeing what you expect.
 
-3. **Generate diverse alternatives**:
-   - **Different mechanism**: Same outcome, different cause
-   - **Different scope**: More specific or more general cause
-   - **Different timing**: Earlier/later cause than assumed
-   - **Multiple causes**: Not one thing but several
-   - **Reverse causation**: Effect might be cause
-   - **Coincidence**: Maybe unrelated
-   - **Selection bias**: Seeing pattern that isn't there
+3. **Make each alternative concrete and testable** - For each explanation, describe how it would actually work, what additional observations you'd expect to see, what assumptions it requires, and what evidence would distinguish it from other alternatives.
 
-4. **Make each alternative concrete**:
-   - How would this explanation work?
-   - What would be its mechanism?
-   - What else would we expect to see?
-
-5. **Evaluate plausibility**:
-   - Which explanations fit all evidence?
-   - Which require fewer assumptions?
-   - Which are testable?
-
-6. **Identify discriminating tests**:
-   - What would distinguish between alternatives?
-   - What evidence would rule out each explanation?
+4. **Identify distinguishing tests** - Determine what would rule out each explanation, what evidence favors which alternatives, and which explanations are testable and how you would test them.
 
 ## Examples
 
-### Alternative explanations for a performance problem:
-"**Observation**: System slows down every day at 2 PM
+### Manufacturing quality issue
 
-**Current explanation**: Lunch-return traffic spike
+"**Observation**: Widget defect rate increased from 2% to 8% over three months
 
-**Alternative explanations**:
-1. **Scheduled job**: A batch process runs at 2 PM
-   - Would see CPU/memory spike
-   - Check cron schedules
-
-2. **Geographic pattern**: European end-of-day + US mid-day overlap
-   - Would see geographic distribution
-   - Check user locations
-
-3. **Cache expiry**: Morning cache expires after 4-5 hours
-   - Would see cache miss rate increase
-   - Check cache TTLs
-
-4. **Cumulative leak**: Memory/connections leak throughout day, critical by 2 PM
-   - Would see gradual degradation
-   - Check resource usage trends
-
-5. **External dependency**: Third-party service has issues at 2 PM
-   - Would see external call latency
-   - Check dependency metrics
-
-**Discriminating test**: Monitor all metrics at 2 PM on weekend - if it's user traffic, weekend should be different."
-
-### Alternative explanations for user behavior:
-"**Observation**: Users abandon cart at payment page
-
-**Current explanation**: Payment form is confusing
+**Current explanation**: New supplier materials are lower quality
 
 **Alternative explanations**:
-1. **Sticker shock**: Total with shipping/tax surprises them
-   - Would see abandonment correlate with total amount
-   - Test showing full price earlier
+1. **Calibration drift**: Testing equipment now flags good parts as defective
+   - Would see defects cluster at borderline measurements
+   - Testing known-good parts would reveal
 
-2. **Trust issues**: Don't trust our payment security
-   - Would see higher abandonment for new vs returning users
-   - Add trust badges and test
+2. **Seasonal humidity**: Temperature and moisture affecting production line
+   - Would correlate with weather patterns
+   - Environmental monitoring would confirm
 
-3. **Comparison shopping**: Using cart to check final price
-   - Would see same users return later
-   - Check user journey patterns
+3. **Training gap**: Recent staff turnover means less experienced operators
+   - Would see defects concentrated on specific shifts or stations
+   - Operator experience data would distinguish
 
-4. **Payment method**: Their preferred method isn't available
-   - Would vary by geographic region
-   - Survey abandoned carts
+4. **Multiple causes**: Material variation plus temperature plus operator experience compounding
+   - Would see markers for several factors
+   - Addressing single cause wouldn't fully resolve
 
-5. **Technical issues**: Page fails silently for some users
-   - Would see JavaScript errors
-   - Check error logs
+5. **Definition change**: Quality standards tightened, catching previously acceptable variation
+   - Would see inspection criteria modified in documentation
+   - Historical parts re-tested would now fail
 
-6. **Time to think**: Need approval from someone else
-   - Would see eventual completion
-   - Check cart recovery rates
+**Key insight**: Changing suppliers based on the first explanation could be expensive and wrong if the real cause is calibration or environmental."
 
-**Key insight**: Different explanations suggest completely different solutions."
+### Student engagement decline
+
+"**Observation**: Class participation dropped significantly after switching to discussion-based format
+
+**Current explanation**: Students prefer lectures
+
+**Alternative explanations**:
+1. **Preparation gap**: Discussion requires advance reading students aren't doing
+   - Would see participation correlate with reading completion
+   - Pre-discussion quizzes would test
+
+2. **Social anxiety**: Format exposes students who fear speaking publicly
+   - Would see same students contributing online but not in person
+   - Anonymous participation tools would distinguish
+
+3. **Group size**: Discussion works poorly with 40 students versus 15
+   - Would see few voices dominating, many silent
+   - Small group breakouts would reveal engagement
+
+4. **Assessment mismatch**: Students unsure how discussion affects their grade
+   - Would see participation increase after grading rubric clarified
+   - Direct questions about grading would surface confusion
+
+5. **Topic difficulty**: Current material is too complex for productive discussion
+   - Would see engagement vary by topic
+   - Simpler discussion topics would test
+
+**Key insight**: Each explanation suggests a different fix—clearer expectations, smaller groups, scaffolding, or hybrid formats."
+
+### Network performance degradation
+
+"**Observation**: Application response times increased from 200ms to 2000ms over two weeks
+
+**Current explanation**: Recent code deployment introduced inefficiency
+
+**Alternative explanations**:
+1. **Data growth**: Database size crossed threshold where queries became slow
+   - Would see query time correlate with data volume
+   - Database metrics would show size changes
+
+2. **External dependency**: Third-party API slowed down, blocking our requests
+   - Would see timeouts concentrated on external calls
+   - Monitoring external service latency would confirm
+
+3. **Load increase**: User traffic grew and system hit capacity limits
+   - Would see performance degrade during peak hours only
+   - Load testing would reproduce
+
+4. **Resource contention**: Another system now sharing infrastructure
+   - Would see resource utilization increased across the board
+   - Infrastructure monitoring would identify competing processes
+
+5. **Cache invalidation**: Recent change broke caching, hitting database repeatedly
+   - Would see cache hit rate drop
+   - Cache metrics would show the pattern
+
+**Key insight**: Rolling back the deployment won't help if the cause is data growth, traffic, or external dependencies."
 
 ## When to use this skill
 
-- Investigating mysterious bugs
-- Understanding user behavior
-- Avoiding confirmation bias
-- Scientific problem-solving
-- Incident analysis
-- Market research interpretation
-- A/B test analysis
-- Medical or technical diagnosis
+- When you find yourself confidently presenting a single explanation without having considered alternatives
+- Before stating "this happened because..." to verify you've tested the explanation against alternatives
+- When noticing you've jumped to the first plausible explanation that came to mind
+- Before recommending action based on assumed causation, ensuring alternatives wouldn't suggest different interventions
+- When investigating problems where the obvious explanation feels too convenient or aligns suspiciously well with existing beliefs
+- To avoid confirmation bias when analyzing incidents, failures, or unexpected outcomes
+- When research findings or diagnostic evidence could support multiple interpretations
+- Before committing resources to solutions based on untested causal assumptions

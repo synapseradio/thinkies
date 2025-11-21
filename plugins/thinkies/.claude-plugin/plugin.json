@@ -4,7 +4,7 @@
   "description": "Cognitive reasoning skills for systematic thinking and problem-solving",
   "author": "synapseradio",
   "skills": {
-    "count": 48,
+    "count": 46,
     "categories": {
       "exploration": {
         "description": "Discovery and investigation techniques",
@@ -22,7 +22,6 @@
         "description": "Critical thinking and evaluation methods",
         "skills": [
           "evidence-check",
-          "assumption-reveal",
           "fallacy-detect",
           "alternatives",
           "logic-trace",
@@ -37,7 +36,6 @@
           "scamper",
           "lateral-think",
           "constraint-play",
-          "random-input",
           "reversal",
           "metaphor-build"
         ]

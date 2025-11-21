@@ -11,56 +11,32 @@ Build understanding layer by layer, starting simple and adding complexity only a
 
 When revealing progressively:
 
-1. **Start with the simplest true thing**:
-   - Find the core concept stripped of caveats
-   - Make it concrete and relatable
-   - Ensure it's genuinely useful at this level
-   - Don't mention complications yet
+1. **Start with the simplest true version** - Find the core concept stripped of qualifications and edge cases. Make it concrete and immediately applicable, verifying it's genuinely useful at this level before saving complications for later layers.
 
-2. **Confirm understanding before adding**:
-   - Check if the foundation makes sense
-   - Watch for confusion signals
-   - Let the simple version settle
-   - Don't rush to complexity
+2. **Check understanding before layering** - Confirm the foundation makes sense by watching for confusion or uncertainty. Let simple versions settle in before adding complexity, resisting the urge to rush toward comprehensive explanations.
 
-3. **Add one layer at a time**:
-   - Introduce complications individually
-   - Connect each new layer to what came before
-   - Explain why this layer matters now
-   - Keep the core idea visible
+3. **Add complexity one layer at a time** - Introduce each complication separately rather than bundling multiple qualifications together. Connect new layers explicitly to established concepts, explaining why each matters while keeping the core visible through additions.
 
-4. **Signal transitions clearly**:
-   - "Now that makes sense..."
-   - "There's a complication..."
-   - "In practice..."
-   - "Building on that..."
+4. **Mark transitions between layers** - Signal shifts with phrases like "Now that makes sense..." or "There's a complication..." or "In practice..." to help the learner track where they are in the progression.
 
-5. **Preserve earlier understanding**:
-   - Simple version stays true, just incomplete
-   - New layers refine, don't invalidate
-   - Show how pieces fit together
-   - Maintain coherent narrative
+5. **Preserve what came before** - Ensure earlier layers stay true though incomplete, so new information refines understanding rather than contradicting it. Show how layers connect to maintain narrative coherence throughout the explanation.
 
-6. **Calibrate to response**:
-   - If they're ahead, move faster
-   - If confused, spend more time
-   - If curious about specifics, follow that thread
-   - Adapt depth to their needs
+6. **Adjust to the learner** - Accelerate when they demonstrate they're ahead, slow down when signals suggest confusion, follow their curiosity into specific areas, and match depth to their demonstrated need rather than your planned structure.
 
 ## Examples
 
-### Explaining caching:
-"**Layer 1 - Core concept**:
-'Caching is keeping a copy of something nearby so you don't have to get it from far away every time. Like keeping salt on the table instead of walking to the pantry for every pinch.'
+### Technical concept
+"**Layer 1 - Core mechanism**:
+'Caching means keeping a copy nearby instead of fetching from the source each time. Like salt on the table rather than walking to the pantry every pinch.'
 
-**Layer 2 - The tradeoff**:
-'The copy might get stale. The salt stays fresh, but imagine keeping milk on the table. Now you have to decide: how long is your copy good for?'
+**Layer 2 - The cost**:
+'Copies can become stale. Salt stays fresh, but milk on the table spoils. You're deciding: how long is this copy valid?'
 
-**Layer 3 - Strategies**:
-'Different caching strategies handle staleness differently. Time-based says "this copy is good for 5 minutes." Event-based says "throw it away when the original changes." Your choice depends on how stale you can tolerate and whether you can detect changes.'
+**Layer 3 - Strategy variations**:
+'Time-based caching says "good for 5 minutes." Event-based says "discard when source changes." The choice depends on staleness tolerance and whether you can detect changes.'
 
-**Layer 4 - Real complexity**:
-'In distributed systems, you have multiple caches that might get out of sync. Now you're juggling consistency, invalidation timing, and cache stampedes. But it's all variations on that core idea: copies nearby that might get stale.'"
+**Layer 4 - Distributed scenarios**:
+'Multiple caches create synchronization problems. You're managing consistency, invalidation timing, and cache stampedes. Still the same core: nearby copies that age.'"
 
 ### Explaining a technical decision:
 "**Layer 1 - What we did**:
@@ -103,11 +79,11 @@ When revealing progressively:
 
 ## When to use this skill
 
-- Explaining technical concepts
-- Onboarding new team members
-- Teaching complex topics
-- Presenting to mixed audiences
-- Writing documentation
-- Introducing architectural decisions
-- Code reviews with junior developers
-- Any time understanding must be built, not dumped
+- When explaining a concept that has important nuances but dumping all qualifications upfront would overwhelm
+- Before answering a user question where the simple answer is useful but incomplete
+- When you notice yourself about to say "well, it's complicated" without offering a starting point
+- When introducing technical concepts to users who may have varying levels of expertise
+- Before presenting architectural decisions that involve multiple layers of reasoning
+- When the user asks a question that has a genuinely simple answer at one level and important complications at another
+- To avoid the trap of either oversimplifying or overwhelming with comprehensive detail
+- When onboarding users to complex systems where they need to be productive quickly but will need deeper understanding later

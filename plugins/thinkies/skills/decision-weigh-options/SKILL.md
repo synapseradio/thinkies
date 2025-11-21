@@ -11,47 +11,19 @@ Compare alternatives by systematically evaluating their trade-offs across multip
 
 When weighing options:
 
-1. **List your options clearly**:
-   - Name each option specifically
-   - Include the "do nothing" option if relevant
-   - Usually 2-5 options for meaningful comparison
-   - "Option A: [specific approach]"
+1. **List your options clearly** - Name each alternative specifically, including the "do nothing" option if relevant. Usually 2-5 options provide meaningful comparison without overwhelming the analysis.
 
-2. **Identify evaluation dimensions**:
-   - What factors matter for this decision?
-   - Consider multiple perspectives: cost, time, risk, complexity, reversibility, team impact
-   - Don't just look at obvious factors
-   - "What are we actually optimizing for?"
+2. **Identify evaluation dimensions** - Determine which factors actually matter for this decision by considering multiple perspectives like cost, time, risk, complexity, reversibility, and team impact. Ask what you're truly optimizing for beyond the obvious factors.
 
-3. **Map trade-offs for each option**:
-   - **Benefits**: What do we gain?
-   - **Costs**: What do we lose or pay?
-   - **Risks**: What could go wrong?
-   - **Constraints**: What does this require?
-   - **Second-order effects**: What else changes?
+3. **Map trade-offs for each option** - Systematically catalog what you gain (benefits), what you lose or pay (costs), what could go wrong (risks), what this requires (constraints), and what else changes as a consequence (second-order effects).
 
-4. **Rate significance honestly**:
-   - Not all factors weigh equally
-   - Major vs minor differences
-   - Deal-breakers vs preferences
-   - Be specific: "saves 2 weeks" not "faster"
+4. **Rate significance honestly** - Distinguish major differences from minor ones and deal-breakers from preferences. Not all factors weigh equally, so be specific with estimates like "saves 2 weeks" rather than vague terms like "faster."
 
-5. **Look for hidden trade-offs**:
-   - What's not immediately visible?
-   - Long-term vs short-term
-   - Team morale, technical debt, flexibility
-   - "What will we be living with?"
+5. **Look for hidden trade-offs** - Surface what's not immediately visible by examining long-term versus short-term consequences, impacts on team morale, accumulation of technical debt, and future flexibility. Ask what you'll be living with months or years from now.
 
-6. **Consider reversibility**:
-   - How hard to undo if wrong?
-   - Reversible decisions can be bolder
-   - Irreversible decisions need more care
-   - "Is this a one-way door?"
+6. **Consider reversibility** - Assess how difficult it would be to undo this choice if it proves wrong. Reversible decisions permit bolder moves, while irreversible decisions demand more careful deliberation.
 
-7. **Check your values**:
-   - Which trade-offs are you willing to make?
-   - What matters most in this context?
-   - Does this align with principles?
+7. **Check your values** - Clarify which trade-offs you're willing to make in this context, what matters most given your principles and constraints, and whether this choice aligns with your core commitments.
 
 ## Examples
 
@@ -186,11 +158,11 @@ Costs:
 
 ## When to use this skill
 
-- Choosing between alternative solutions
-- Architecture decisions
-- Resource allocation choices
-- Buy vs build decisions
-- Prioritization conflicts
-- Hiring decisions
-- Process changes
-- Any decision with meaningful trade-offs
+- When presenting multiple solution approaches to the user without making the decision for them
+- When you find yourself drawn to one option but recognize valid concerns about it
+- Before recommending a technical architecture that carries significant trade-offs
+- When the user asks "which is better" and the honest answer is "it depends on what you value"
+- When you notice yourself oversimplifying a decision by ignoring costs or risks
+- Before resource allocation decisions where different stakeholders care about different outcomes
+- When buy versus build decisions require balancing immediate cost against long-term control
+- To help the user understand why you're recommending a particular approach by showing what you're trading away

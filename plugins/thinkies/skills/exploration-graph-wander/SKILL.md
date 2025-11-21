@@ -11,35 +11,17 @@ Explore topics through free-form connections, allowing unexpected relationships 
 
 When wandering as a graph:
 
-1. **Start anywhere interesting**: Don't worry about the "right" starting point
-   - Pick what draws your attention
-   - Multiple entry points are fine
+1. **Start anywhere interesting** - Choose what naturally draws your attention without worrying about finding the "right" starting point, allowing multiple entry points if several concepts feel relevant.
 
-2. **Follow connections naturally**:
-   - Let each idea remind you of others
-   - Jump between distant concepts if they connect
-   - "This makes me think of..."
-   - "Interestingly, this relates to..."
+2. **Follow connections naturally** - Let each idea remind you of others by noticing when you think "this makes me think of..." or "this relates to...," jumping between even distant concepts if a genuine connection exists, and trusting associative thinking to reveal relationships.
 
-3. **Build bridges**:
-   - When you jump, explain the connection
-   - These bridges are often where insights hide
-   - Even "weak" connections can be valuable
+3. **Build bridges** - Explain each connection as you make it, recognizing that these bridges between ideas often contain the real insights, and valuing even seemingly weak connections since they might reveal unexpected relationships.
 
-4. **Revisit nodes**:
-   - Return to earlier ideas with new perspective
-   - Each return adds new connections
-   - Cycles are productive, not repetitive
+4. **Revisit nodes** - Return to earlier ideas with new perspective gained from the wandering, understanding that each return adds new connections rather than being repetitive, and seeing cycles as productive deepening rather than circular thinking.
 
-5. **Let patterns emerge**:
-   - Don't force structure
-   - Notice which ideas keep appearing
-   - See what clusters form naturally
+5. **Let patterns emerge** - Avoid forcing structure prematurely, noticing which concepts keep reappearing across different paths, observing what clusters form naturally, and identifying hub concepts that connect to many other ideas.
 
-6. **Map the territory**:
-   - Occasionally zoom out to see the whole graph
-   - Note surprising connections
-   - Identify hub concepts that connect to many others
+6. **Map the territory** - Periodically zoom out to see the whole graph of connections you've built, noting which linkages surprise you, and articulating what the overall structure reveals about the problem space.
 
 ## Examples
 
@@ -61,11 +43,11 @@ Oh, and restaurants handle modifications to in-progress orders... that's exactly
 
 ## When to use this skill
 
-- Finding hidden connections
-- Creative problem solving
-- Understanding complex systems
-- When linear thinking feels constraining
-- Discovering emergent patterns
-- Synthesizing diverse information
-- Building mental models
-- Exploring unfamiliar domains
+- When linear, sequential thinking feels constraining and you sense that relationships exist beyond the obvious next step
+- If you're trying to understand a complex system where everything connects to everything else
+- When you notice yourself wanting to explore multiple threads simultaneously rather than following one to completion
+- Before forcing a hierarchical structure, to discover what natural clusters and connections exist
+- If synthesizing diverse information from multiple sources that don't obviously fit a single narrative
+- When building a mental model of an unfamiliar domain and need to let the territory reveal its own structure
+- To find hidden connections between concepts that seem unrelated on the surface
+- When you catch yourself thinking "this reminds me of something else" repeatedly, signaling rich associative potential

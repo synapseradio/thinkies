@@ -11,41 +11,17 @@ Navigate between concrete specifics and abstract principles to think at the most
 
 When using the abstraction ladder:
 
-1. **Identify where you are**:
-   - Very concrete: Specific implementation, exact data, particular instance
-   - Somewhat concrete: This feature, this user, this bug
-   - Middle: Type of feature, class of users, category of bug
-   - Somewhat abstract: Patterns, principles, approaches
-   - Very abstract: Fundamental truths, universal principles
+1. **Locate your current level** - Determine whether you're working with specific instances, particular cases, categories and types, general patterns, or fundamental principles.
 
-2. **Notice if you're stuck**:
-   - Too concrete: Lost in details, can't see patterns
-   - Too abstract: No way to act, floating in generalities
-   - Wrong level: Feels like you're missing something
+2. **Recognize misalignment** - Notice when you're lost in details without seeing patterns, floating in generalities without actionable steps, or working at the wrong altitude for the problem at hand.
 
-3. **Climb up (abstract)**:
-   - What is this an example of?
-   - What pattern does this follow?
-   - What's the general principle?
-   - How would you explain this to someone outside the domain?
-   - What's the essential nature of this?
+3. **Climb up** - Generalize by asking what this exemplifies, what pattern it follows, or what principle underlies it, moving from specifics toward broader understanding.
 
-4. **Climb down (concrete)**:
-   - What does this look like in practice?
-   - Can you give an example?
-   - What would you actually do?
-   - What specific case does this apply to?
-   - How do you know it's working?
+4. **Climb down** - Concretize by asking what this looks like in practice, what specific example demonstrates it, or what actual steps implement it, moving from principles toward actionable details.
 
-5. **Move sideways (same level)**:
-   - What else is like this?
-   - What's another example at this level?
-   - How else could you implement this principle?
+5. **Move sideways** - Find alternatives at the same abstraction level by asking what else is like this, what other examples exist here, or how else this principle manifests.
 
-6. **Find the right level**:
-   - Where can you see patterns but also act?
-   - Where does understanding connect to doing?
-   - Where is communication clearest?
+6. **Find the working level** - Identify where understanding enables action, where patterns become visible without losing practical grounding, and where communication achieves clarity for your audience.
 
 ## Examples
 
@@ -173,13 +149,11 @@ Person A: 'It's just bad architecture.'
 
 ## When to use this skill
 
-- Stuck in details and can't see the big picture
-- Have big ideas but can't make them concrete
-- Need to explain something to different audiences
-- Looking for alternative solutions
-- Connecting theory to practice
-- Debugging complex problems
-- Making architectural decisions
-- Learning new concepts
-- Finding the right scope for a change
-- Communicating across experience levels
+- When stuck in implementation details without seeing the broader pattern
+- When working with abstract principles that lack concrete application paths
+- Before explaining concepts to audiences with different expertise levels
+- While searching for alternative solutions by exploring at different abstraction levels
+- When debugging requires understanding both specific symptoms and systemic patterns
+- During architectural decisions that need to balance vision with practical constraints
+- When learning new concepts by connecting theory to concrete examples
+- To find the appropriate scope for changes by working at the right level of generality

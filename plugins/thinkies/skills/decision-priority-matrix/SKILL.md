@@ -11,177 +11,90 @@ Map tasks across impact and effort dimensions to reveal what deserves attention 
 
 When creating a priority matrix:
 
-1. **List all options**:
-   - What are the possible things to do?
-   - Include both obvious and less obvious choices
-   - Aim for 5-15 items for meaningful comparison
-   - Be specific: "Add password reset" not "improve auth"
+1. **List specific options and define impact criteria** - Enumerate 5 to 15 possible actions with enough specificity to evaluate them (like "Add password reset" rather than "improve auth"), then establish what impact means in this context (revenue, users, technical health, team velocity) using consistent criteria across all items while considering both immediate and long-term timeframes.
 
-2. **Define impact clearly**:
-   - Impact on what? Revenue, users, technical health, team velocity?
-   - Use consistent criteria across all items
-   - Think about timeframe: immediate vs long-term
-   - Consider both positive impact and avoided negative
+2. **Estimate effort realistically** - Account for time, people, complexity, and risk including hidden costs like ongoing maintenance, coordination overhead, and learning curves, while considering what else gets blocked or delayed, then validate assumptions with the team who will do the work.
 
-3. **Estimate effort realistically**:
-   - Time, people, complexity, risk
-   - Include hidden costs: maintenance, coordination, learning
-   - What else gets blocked or delayed?
-   - Check assumptions with team
+3. **Plot items and interpret quadrants** - Map each option as high or low on both dimensions: high impact with low effort items are rare and valuable (do first), high impact with high effort items are strategic work (plan carefully), low impact with low effort items are quick wins (do if time permits), and low impact with high effort items usually warrant skipping entirely.
 
-4. **Plot on the matrix**:
-   ```
-   High Impact │ INVEST    │ STRATEGIC
-               │ (Do First)│ (Plan Carefully)
-   ────────────┼───────────┼──────────────
-   Low Impact  │ QUICK WINS│ AVOID
-               │ (If Easy) │ (Waste)
-               └───────────┴──────────────
-                Low Effort   High Effort
-   ```
-
-5. **Interpret the quadrants**:
-   - **High Impact, Low Effort**: Do these first (rare and valuable)
-   - **High Impact, High Effort**: Important strategic work (plan carefully)
-   - **Low Impact, Low Effort**: Quick wins if time permits
-   - **Low Impact, High Effort**: Usually skip these
-
-6. **Challenge the easy quadrant placements**:
-   - Are you overestimating impact because you like the idea?
-   - Are you underestimating effort because you don't understand it?
-   - Get second opinions on placement
-
-7. **Consider dependencies**:
-   - Some high-effort items unblock many low-effort ones
-   - Some low-impact items are prerequisites
-   - Sequence matters, not just priority
-
-8. **Revisit regularly**:
-   - Impact and effort change over time
-   - New information shifts placement
-   - Completed work opens new options
+4. **Challenge placements and consider dependencies** - Question whether you're overestimating impact because you like an idea or underestimating effort because you don't fully understand it, seek second opinions on placement, recognize that some high-effort items unblock many low-effort ones while some low-impact items are prerequisites for more valuable work, and remember that sequence matters beyond just individual priority.
 
 ## Examples
 
-### Prioritizing technical debt:
+### Technical debt backlog
 
-"**Items to evaluate**:
-1. Upgrade outdated authentication library (security vulnerability)
-2. Add database indexes for slow queries
-3. Refactor user service into microservices
-4. Add caching layer
-5. Improve test coverage from 40% to 80%
-6. Document API endpoints
-7. Set up automated backups
+"**Items to evaluate**: Upgrade authentication library with known security vulnerability, add database indexes for slow queries, refactor user service into microservices, add caching layer, improve test coverage from 40% to 80%, document API endpoints, set up automated backups.
 
-**Plotting**:
+**High impact, low effort** (do first):
 
-**High Impact, Low Effort** (Do First):
-- Item 1: Upgrade auth library
-  - Impact: Critical security risk
-  - Effort: 2-3 days, well-documented upgrade path
-  - Decision: Immediate priority
+Upgrade auth library: Critical security risk that could lead to breach, but well-documented upgrade path makes it 2 to 3 days of work. Immediate priority this week.
 
-- Item 2: Add database indexes
-  - Impact: Fixes major performance bottleneck
-  - Effort: Half day to identify and add
-  - Decision: Do this week
+Add database indexes: Fixes major performance bottleneck affecting user experience, identified specific queries, implementation is half a day to add the indexes. Do this week.
 
-**High Impact, High Effort** (Strategic):
-- Item 5: Improve test coverage
-  - Impact: Reduces bugs, enables confident refactoring
-  - Effort: 6-8 weeks ongoing work
-  - Decision: Plan phased approach, critical paths first
+**High impact, high effort** (strategic planning):
 
-**Low Impact, Low Effort** (Quick Wins):
-- Item 6: Document API
-  - Impact: Helps new developers, reduces questions
-  - Effort: 1-2 days
-  - Decision: Good filler work between bigger tasks
+Improve test coverage: Significantly reduces bugs in production and enables confident refactoring, but requires 6 to 8 weeks of ongoing work. Plan phased approach focusing on critical paths first, integrate into sprint planning.
 
-**Low Impact, High Effort** (Avoid):
-- Item 3: Microservices refactor
-  - Impact: Might improve scalability (but not current bottleneck)
-  - Effort: 3-4 months, high risk
-  - Decision: Defer until we have actual scaling problems
+**Low impact, low effort** (quick wins):
 
-**Re-evaluated**:
-- Item 4: Add caching - moved from medium to high impact after realizing it would fix user-reported slowness
-- Item 7: Automated backups - realized this should be high impact (data loss risk) even though it's medium effort"
+Document API: Helps new developers and reduces repetitive questions, takes 1 to 2 days. Good filler work between bigger tasks or for onboarding someone new.
 
-### Prioritizing features:
+**Low impact, high effort** (avoid):
 
-"**Quadrant mapping**:
+Microservices refactor: Might improve scalability but that's not our current bottleneck, would take 3 to 4 months with high risk of introducing new problems. Defer until we have actual scaling problems that justify this complexity.
 
-**High Impact, Low Effort**:
-- Email notifications for order status
-  - Every customer asks for this
-  - Use existing email service, just new templates
-  - Do in sprint 1
+**Placement challenges**: Initially put caching as medium priority, but after recognizing it would fix user-reported slowness, moved to high impact. Realized automated backups should be high impact due to data loss risk even though effort is moderate. Questioned whether microservices truly has the impact we assumed or if we're just attracted to the technology."
 
-**High Impact, High Effort**:
-- Mobile app
-  - 60% of traffic is mobile web
-  - 3-4 month project with app store deployment
-  - Plan for Q2, research competitors first
+### Feature roadmap
 
-- Real-time inventory sync
-  - Prevents overselling (major customer complaint)
-  - Requires new infrastructure, third-party integrations
-  - Start architecture planning now
+"**Quadrant mapping for product features**:
 
-**Low Impact, Low Effort**:
-- Dark mode
-  - Small but vocal user request
-  - CSS changes mostly, 2-3 days
-  - Nice-to-have when between major features
+**High impact, low effort**:
 
-**Low Impact, High Effort**:
-- Social media integration
-  - Marketing wants it but no user demand
-  - OAuth, content sharing, moderation needed
-  - Skip unless marketing can show clear ROI
+Email notifications for order status: Every customer asks for this in support tickets, and we already have email service infrastructure so it's just new templates and triggers. Implement in sprint 1.
 
-**Insights**:
-- Two high-impact items in easy quadrant is unusual (grab them)
-- High-effort quadrant needs sequencing: inventory sync unblocks mobile app features
-- Questioned social media placement: is impact really low or are we missing something?"
+**High impact, high effort**:
 
-### Prioritizing team improvements:
+Mobile app: 60% of traffic comes from mobile web with poor experience, but native app is 3 to 4 month project including app store processes. Plan for Q2, research competitor apps first to avoid missteps.
 
-"**Items plotted**:
+Real-time inventory sync: Prevents overselling which is major customer complaint causing refunds and reputation damage, but requires new infrastructure and third-party integrations with vendors. Start architecture planning now, recognize this is a foundation for other features.
 
-**High Impact, Low Effort**:
-- Daily standup (team is distributed, losing sync)
-  - Effort: 15 min/day
-  - Impact: Catches blockers early, improves coordination
-  - Start tomorrow
+**Low impact, low effort**:
 
-**High Impact, High Effort**:
-- Hire senior DevOps engineer
-  - Impact: Unblocks deployment automation, reduces incidents
-  - Effort: 3-4 month hiring process, 6 month onboarding
-  - Start recruiting now, plan for Q3 impact
+Dark mode: Small but vocal user request with no business impact evidence, mostly CSS changes taking 2 to 3 days. Nice-to-have when between major features or as onboarding task.
 
-- Implement CI/CD pipeline
-  - Impact: Faster deployments, fewer bugs to production
-  - Effort: 4-6 weeks to build, need DevOps expertise
-  - Dependencies: May need that hire first, or could start with contractor
+**Low impact, high effort**:
 
-**Low Impact, Low Effort**:
-- Switch to new project management tool
-  - Current one works fine, new one is prettier
-  - Skip - solving non-problem
+Social media integration: Marketing team wants it but no user demand in feedback or interviews, would require OAuth implementation, content sharing features, and moderation. Skip unless marketing demonstrates clear ROI with data, not just intuition.
 
-**Realization**: CI/CD is dependent on DevOps hire, so sequence is: start hire process (now) → implement CI/CD (when hire is close or use contractor) → hire comes in to maintain and improve"
+**Insights from mapping**: Having two high-impact items in the easy quadrant is unusual and valuable, grab those wins immediately. The high-effort quadrant needs sequencing analysis since inventory sync infrastructure could enable better mobile app features. Questioned social media placement by asking marketing for evidence, confirming impact really is low based on actual user research rather than assumptions."
+
+### Team process improvements
+
+"**Items plotted for team efficiency**:
+
+**High impact, low effort**:
+
+Daily standup: Team is distributed and losing synchronization, causing duplicated work and blocked progress. Takes only 15 minutes per day but catches blockers early and improves coordination. Start tomorrow.
+
+**High impact, high effort**:
+
+Hire senior DevOps engineer: Would unblock deployment automation and reduce incidents significantly, but hiring process takes 3 to 4 months and onboarding another 6 months before full productivity. Start recruiting process now, plan for Q3 impact.
+
+Implement CI/CD pipeline: Enables faster deployments and catches bugs before production, but requires 4 to 6 weeks to build properly and needs DevOps expertise we don't currently have.
+
+**Low impact, high effort**:
+
+Switch to new project management tool: Current tool works adequately and team knows it, new one is prettier but provides no material benefit. This is solving a non-problem, skip it entirely.
+
+**Dependency realization**: CI/CD pipeline depends on DevOps expertise, so sequence is start hire process immediately, then either implement CI/CD when hire is close to starting or use contractor to build it, then new hire maintains and improves the system. Without recognizing this dependency, we might have started CI/CD and struggled, or waited to start hiring."
 
 ## When to use this skill
 
-- Backlog grooming
-- Sprint planning
-- Quarterly planning
-- Resource allocation
-- Deciding what not to do
-- When everything feels urgent
-- Evaluating requests from stakeholders
-- Making trade-offs visible
+- When evaluating what to work on next from a backlog of options
+- Before committing to recommendations for the user, to ensure you're suggesting high-leverage work
+- When everything feels urgent and you need objective framework to distinguish true priorities
+- To make trade-offs visible between competing options rather than implicit
+- When stakeholders request work and you need to evaluate it against existing priorities
+- Before planning sprints or quarters to maximize value delivery
+- When you notice yourself recommending work based on interest rather than impact

@@ -9,137 +9,82 @@ Transform problems and ideas by systematically applying seven different creative
 
 ## Instructions
 
-Work through each lens deliberately, asking the specific questions that reveal new possibilities:
+When using SCAMPER:
 
-### 1. Substitute
-**Replace one element with another**
+1. **Work through each lens deliberately** - Apply all seven operations even when some feel less relevant, since the uncomfortable ones often yield the most surprising ideas: Substitute (replace elements with alternatives), Combine (merge multiple elements together), Adapt (borrow from other contexts), Modify (change attributes or scale), Put to other use (repurpose for different contexts), Eliminate (remove elements to simplify), and Reverse (flip it around or do the opposite).
 
-Questions to ask:
-- What component could we swap out?
-- What if we used a different material, process, or approach?
-- Who else could do this instead?
-- What other ingredients or resources could work here?
-- Can we substitute the place, time, or context?
+2. **Generate possibilities for each operation** - For Substitute, ask what components could be swapped out, what different materials or processes could work, or who else could do this instead. For Combine, consider what could blend together, whether purposes could merge, or if adjacent processes could unite. For Adapt, look at what similar solutions exist in other domains, how different industries solve comparable problems, or what patterns from nature or games could apply. For Modify, explore making it bigger or smaller, changing shape or form, altering frequency or timing, or shifting who has control. For Put to other use, identify what else this could do, who else could use it, or whether side effects could become the main purpose. For Eliminate, question what could be removed entirely, what's truly needed, or what the core essence is. For Reverse, imagine doing the opposite, reversing order or sequence, or swapping who does what between user and system.
 
-Example: "What if instead of storing this in a database, we used the filesystem?" or "What if users controlled permissions instead of admins?"
-
-### 2. Combine
-**Merge two or more elements**
-
-Questions to ask:
-- What could we blend together?
-- Can we combine purposes or functions?
-- What if we merged this with an adjacent process?
-- Could we unite different user groups or use cases?
-- What ideas, features, or teams could work together?
-
-Example: "What if we combined the notification system with the task queue?" or "What if one interface handled both creation and editing?"
-
-### 3. Adapt
-**Adjust something from another context**
-
-Questions to ask:
-- What else is like this in a different domain?
-- How do other industries solve similar problems?
-- What could we copy or learn from?
-- What if we adapted a pattern from nature, games, or social systems?
-- Which metaphor could we borrow from?
-
-Example: "How do restaurants handle peak load? Could we adapt their reservation system?" or "Git uses branching for code - could we use that pattern for documents?"
-
-### 4. Modify
-**Change attributes or scale**
-
-Questions to ask:
-- What if we made it bigger? Smaller?
-- Could we change the shape, color, or form?
-- What if we exaggerated or minimized a feature?
-- Can we alter the frequency, speed, or timing?
-- What if we changed who has control?
-
-Example: "What if instead of processing one at a time, we batched 1000?" or "What if the feedback loop was instant instead of delayed?"
-
-### 5. Put to other use
-**Repurpose for different contexts**
-
-Questions to ask:
-- What else could this do?
-- Who else could use this?
-- Can we apply this to a different problem?
-- What if we used it in a different stage of the process?
-- Could a side effect become the main purpose?
-
-Example: "Our error logs are for debugging, but could developers use them for usage analytics?" or "This admin tool could help power users customize their workflow."
-
-### 6. Eliminate
-**Remove elements to simplify**
-
-Questions to ask:
-- What if we removed this entirely?
-- Can we make it smaller or lighter?
-- What's not needed?
-- Could we split it and keep only part?
-- What if we reduced it to its core essence?
-
-Example: "Do we need this approval step at all?" or "What if we had zero configuration and just used smart defaults?"
-
-### 7. Reverse
-**Flip it around or do the opposite**
-
-Questions to ask:
-- What if we did the opposite?
-- Can we reverse the order or sequence?
-- What if the user did this instead of the system?
-- Could we turn it inside out or upside down?
-- What if we swapped cause and effect?
-
-Example: "Instead of pushing notifications to users, what if users pulled what they wanted?" or "What if we started with the solution and worked backward to the problem?"
-
-## How to use SCAMPER
-
-**Work systematically**: Go through all seven lenses even when one feels less relevant. The uncomfortable ones often yield surprises.
-
-**Combine the operations**: After exploring each individually, try combining them. "What if we eliminated X and combined Y with Z?"
-
-**Record everything**: Write down every idea, even ones that seem silly. Wild ideas often contain seeds of practical solutions.
-
-**Revisit with context**: When stuck, pick a specific element and run it through all seven lenses. "Let's SCAMPER the authentication flow."
+3. **Combine operations and capture everything** - After exploring each lens individually, try combining them to ask questions like "What if we eliminated X and combined Y with Z?" Record every idea even when it seems impractical, since wild ideas often contain seeds of practical solutions, and revisit the process with specific elements when stuck.
 
 ## Examples
 
-### Product feature stuck:
-"We're stuck on how users share documents.
+### Product feature development
 
-**Substitute**: What if instead of email, we used QR codes?
-**Combine**: What if sharing and permissions were the same action?
-**Adapt**: How does Dropbox do this? Could we adapt their link model?
-**Modify**: What if shares expired after 24 hours by default?
-**Put to other use**: Could the share log become an audit trail?
-**Eliminate**: What if there was no sharing UI, just a simple link?
-**Reverse**: What if recipients requested access instead of owners granting it?
+"We're rethinking how users share documents in our collaboration tool.
 
-That last one is interesting - it flips the power dynamic and might reduce spam sharing..."
+**Substitute**: Instead of email-based sharing, what if we used QR codes that expire after scanning, or blockchain-based access tokens?
 
-### Technical architecture:
-"Rethinking our caching layer.
+**Combine**: What if sharing and permission setting were the same single action, eliminating the two-step process?
 
-**Substitute**: What if we used CDN edge caching instead of Redis?
-**Combine**: What if cache and database were the same thing?
-**Adapt**: How do browsers handle caching? Could we use similar headers?
-**Modify**: What if cache lifetime was infinite with smart invalidation?
-**Put to other use**: Could cache misses drive preloading strategies?
-**Eliminate**: What if we removed caching and optimized the database instead?
-**Reverse**: What if the database cached queries instead of us caching results?
+**Adapt**: Dropbox uses simple link sharing - could we adapt their model but add our document versioning on top?
 
-The 'eliminate' lens is forcing us to question whether we have a caching problem or a database problem..."
+**Modify**: What if shares automatically expired after 24 hours unless explicitly extended, creating urgency and reducing stale permissions?
+
+**Put to other use**: Our share logs are for auditing, but what if users could use them as a collaboration timeline showing document evolution?
+
+**Eliminate**: What if there was no sharing UI at all, just a button that generates a simple link with smart defaults?
+
+**Reverse**: Instead of owners granting access, what if recipients requested it and owners approved from a queue?
+
+That last reversal is interesting - it flips the power dynamic and might reduce permission sprawl while giving owners better context about why someone needs access."
+
+### Technical architecture
+
+"Rethinking our application's caching strategy.
+
+**Substitute**: What if we used CDN edge caching globally instead of centralized Redis, or replaced the cache entirely with a faster database?
+
+**Combine**: What if cache and database were unified into a single system that handles both persistence and speed?
+
+**Adapt**: Browsers have sophisticated caching with headers and invalidation - could we use HTTP caching semantics for our internal services?
+
+**Modify**: What if cache lifetime was infinite by default with smart invalidation triggered by mutations, rather than time-based expiry?
+
+**Put to other use**: Cache misses reveal user needs - could we use that pattern to drive intelligent preloading strategies?
+
+**Eliminate**: What if we removed caching entirely and instead optimized our database queries and added better indexes?
+
+**Reverse**: Instead of our application caching database results, what if the database itself cached frequently-accessed queries?
+
+The Eliminate lens is forcing us to question whether we have a caching problem or a database optimization problem - maybe we're solving the wrong thing."
+
+### Team process improvement
+
+"Our code review process is slow and becoming a bottleneck.
+
+**Substitute**: What if we used automated code quality tools instead of manual review for style issues, or peer programming instead of async reviews?
+
+**Combine**: What if code review and deployment approval were the same step, or reviews happened during standups as a team?
+
+**Adapt**: How do open source projects handle reviews at scale? Could we adapt their maintainer model or review rotation?
+
+**Modify**: What if instead of reviewing entire pull requests, we reviewed smaller commits continuously throughout the day?
+
+**Put to other use**: Review comments contain valuable learning - could we turn them into a searchable knowledge base for common patterns?
+
+**Eliminate**: What if we eliminated review for certain types of changes like documentation or tests, or removed the requirement that seniors review everything?
+
+**Reverse**: What if authors requested specific reviewers to look at specific parts, rather than assigning whole PRs to someone?
+
+Combining Eliminate and Modify: what if we removed review requirements for small changes under 50 lines and did rapid 5-minute reviews for everything else?"
 
 ## When to use this skill
 
-- Brainstorming new features or solutions
-- Breaking through creative blocks
-- Redesigning existing systems
-- Product innovation sessions
-- When obvious approaches aren't working
-- Generating alternatives for comparison
-- Workshop facilitation
-- Challenging conventional designs
+- When you're stuck generating creative alternatives to a problem
+- Before committing to the first solution that comes to mind
+- When brainstorming new features or redesigning existing systems
+- To challenge conventional approaches that may be limiting options
+- When you notice yourself following habitual patterns without questioning them
+- Before telling the user "here's the solution" without exploring alternatives first
+- To generate diverse options for comparison rather than presenting a single path

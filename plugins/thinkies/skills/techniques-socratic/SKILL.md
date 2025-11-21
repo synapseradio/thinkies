@@ -25,6 +25,25 @@ Don't argue or explain - ask questions that make thinking visible:
    - Are there cases where this assumption breaks?
    - "What has to be true for this to work?"
 
+   **Systematic assumption analysis**:
+   - Work backwards: "This assumes..."
+   - Ask: "When wouldn't this apply?"
+   - Ask: "What if the opposite were true?"
+   - Ask: "Why do we believe this prerequisite exists?"
+
+   **Categorize assumptions by type**:
+   - **Factual**: Assumptions about how things are ("Users have stable internet")
+   - **Causal**: Assumptions about what leads to what ("Microservices will solve our scaling problems")
+   - **Value**: Assumptions about what's important ("Speed matters more than accuracy here")
+   - **Definitional**: Assumptions about what terms mean ("Quality means zero bugs")
+   - **Contextual**: Assumptions about the situation ("The market will remain stable")
+   - **Capability**: Assumptions about what's possible ("Team can learn this while delivering")
+
+   **Test assumption validity**:
+   - Which assumptions are solid vs questionable?
+   - Which assumptions are load-bearing (if they fail, everything fails)?
+   - What happens if key assumptions don't hold?
+
 3. **Examine evidence and reasoning**:
    - What evidence supports this?
    - How do you know this is true?
@@ -122,15 +141,53 @@ Don't argue or explain - ask questions that make thinking visible:
 
 **Question the question**: "Instead of 'what features do users want,' should we ask 'what are users trying to accomplish and where are they struggling?' What question would actually improve the product?"
 
+### Systematic assumption analysis:
+
+**Claim**: "We'll implement this new initiative over the next 6 months"
+
+**Clarify**: "What does 'implement' mean here? Full rollout? Pilot phase? And what makes 6 months the right timeline?"
+
+**Probe assumptions systematically**:
+
+Let me categorize the hidden assumptions:
+
+- **Factual**: Resources are available for this initiative alongside existing commitments
+- **Causal**: This initiative will solve the underlying problem (not just symptoms)
+- **Capability**: People can learn new approaches while maintaining current performance
+- **Contextual**: External conditions and priorities will remain stable
+- **Definitional**: "Complete" means the system is in place, not that people are using it effectively
+- **Value**: The benefits justify the disruption and complexity
+
+**Examine evidence**: "What evidence suggests this initiative addresses the root cause? What happened when similar initiatives were tried before? What do the people affected by this actually say they need?"
+
+**Test assumption validity**:
+
+- Available capacity: Questionable - people are already at their limits
+- Will solve the problem: Untested - have we verified this is the actual issue?
+- Capability to adapt: Uncertain - what support exists for the transition?
+- Stable context: Risky - several external factors could shift
+
+**Identify load-bearing assumptions**: "Which assumption, if wrong, invalidates the entire initiative? The claim that 'this addresses the root cause' seems load-bearing. If that's false, nothing else matters."
+
+**Explore implications**: "If people are already stretched thin, what gets dropped? If this is new territory, what's the learning curve? If we invest 6 months and it doesn't work, what have we lost?"
+
+**Question the question**: "Are we solving a problem we have, or one we think we might have? Should we first deeply understand what's actually not working and why?"
+
 ## When to use this skill
 
-- Examining your own reasoning
-- Challenging team assumptions
-- Design reviews and architecture decisions
-- Debugging flawed logic
-- Mentoring through questions instead of answers
-- Getting past surface-level thinking
-- Revealing hidden assumptions in requirements
-- Testing the strength of arguments
-- Moving from opinions to understanding
-- Finding root causes versus symptoms
+- When you notice yourself making claims without examining the underlying assumptions
+- Before committing to plans that rest on unverified beliefs or untested reasoning
+- When you find yourself saying "obviously" or "clearly" about something that may not be
+- To reveal hidden assumptions in requirements, proposals, or strategic decisions
+- When disagreements persist and you suspect different unstated assumptions are the cause
+- To test whether your reasoning actually supports your conclusions
+- When mentoring others and questions would serve better than direct answers
+- To identify load-bearing assumptions that would invalidate plans if wrong
+- When conventional wisdom feels questionable but you haven't articulated why
+- Before major resource commitments to ensure the logic is sound
+- When you need to move from opinions and intuitions to evidence-based understanding
+- To debug mysterious failures by questioning what must be true for the failure to occur
+
+## Related Skills
+
+**first-principles** - For building new solutions from fundamental truths. Use first-principles when you need to generate novel approaches unconstrained by convention, rebuild understanding from axioms, or design something genuinely new. socratic is analytical (testing existing reasoning through questioning), while first-principles is generative (constructing new solutions from foundational truths).

@@ -11,39 +11,17 @@ Discover recurring patterns and unifying concepts that connect multiple separate
 
 When finding themes:
 
-1. **Collect instances**: What are the individual pieces you're looking at?
-   - Gather examples, observations, or data points
-   - Don't categorize yet, just collect
-   - Include things that seem unrelated
+1. **Collect instances** - Gather examples, observations, or data points without categorizing yet, including things that seem unrelated.
 
-2. **Look for repetition**:
-   - What keeps coming up?
-   - What's mentioned in different contexts?
-   - What appears across different sources?
-   - What recurs over time?
+2. **Look for repetition** - Identify what keeps coming up across different contexts, sources, or over time.
 
-3. **Notice variation**:
-   - How does the same thing appear differently?
-   - What's the common element in different forms?
-   - What's the idea beneath different words?
+3. **Notice variation** - Observe how the same thing appears differently, what common element exists in different forms, and what idea lives beneath different words.
 
-4. **Name the theme**:
-   - What's the essence that repeats?
-   - Try multiple names to find the right fit
-   - Use clear, specific language
-   - Capture what makes it meaningful
+4. **Name the theme** - Articulate the essence that repeats by trying multiple names until you find clear, specific language that captures what makes it meaningful.
 
-5. **Test the theme**:
-   - Does it explain most instances?
-   - Does it predict where else you'd see this?
-   - Are there counter-examples?
-   - Is it actually multiple themes overlapping?
+5. **Test the theme** - Verify it explains most instances, predicts where else you'd see this, and check for counter-examples or whether it's multiple themes overlapping.
 
-6. **Explore relationships between themes**:
-   - Which themes appear together?
-   - Which themes seem to oppose each other?
-   - Which is most fundamental?
-   - What's the hierarchy or structure?
+6. **Explore relationships between themes** - Determine which themes appear together or oppose each other, which is most fundamental, and what hierarchy or structure exists.
 
 ## Examples
 
@@ -134,12 +112,15 @@ When finding themes:
 
 ## When to use this skill
 
-- Analyzing qualitative data or feedback
-- Making sense of multiple bug reports
-- Understanding recurring problems
-- Finding what really matters in a discussion
-- Synthesizing research findings
-- Identifying root causes
-- Understanding team dynamics
-- Making sense of complex situations
-- Deciding what to prioritize
+- When you have diverse feedback or observations and need to identify what conceptually unifies them
+- Before concluding "there's no pattern here" when faced with seemingly unrelated information
+- When qualitative data feels overwhelming and you need to name what keeps recurring
+- When deciding priorities and you need to understand what concerns keep appearing across stakeholders
+- After gathering research and before making recommendations, to identify the central ideas
+- When multiple people say different things but you sense they're pointing at the same underlying issue
+- Before treating each piece of feedback as unique when patterns might reveal systemic themes
+- When you need to distinguish signal from noise by recognizing what recurs versus what's random
+
+## Related Skills
+
+**connect-dots** - For discovering mechanical relationships and causal connections. Use connect-dots when you need to understand how things influence each other, trace cause-effect chains, or map system interactions. theme-find focuses on identifying what conceptually unifies observations, while connect-dots focuses on discovering how things mechanistically relate and interact.

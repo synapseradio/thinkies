@@ -1,0 +1,27 @@
+{
+  "name": "code-quality",
+  "version": "1.0.0",
+  "description": "Skills that guide Claude in assessing and discussing code health systematically",
+  "author": "synapseradio",
+  "skills": [
+    "architecture-review",
+    "tech-debt-assessment",
+    "abstraction-review"
+  ],
+  "keywords": [
+    "code-quality",
+    "architecture",
+    "technical-debt",
+    "abstraction",
+    "design-review",
+    "refactoring",
+    "assessment"
+  ],
+  "repository": {
+    "type": "local",
+    "path": ".claude/plugins/code-quality"
+  },
+  "compatibility": {
+    "claude-code": ">=1.0.0"
+  }
+}

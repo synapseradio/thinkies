@@ -11,89 +11,63 @@ Systematically evaluate how well evidence supports specific claims.
 
 When checking evidence:
 
-1. **Identify the claim**: What exactly is being asserted?
-   - Make it specific and testable
-   - Separate multiple claims if needed
-   - "The claim is that X causes Y"
+1. **Identify the claim** - State precisely what is being asserted, making it specific enough to be testable and separating bundled claims into distinct assertions.
 
-2. **Inventory the evidence**:
-   - What evidence is offered?
-   - Direct vs indirect support
-   - Primary vs secondary sources
-   - Quantitative vs qualitative
+2. **Inventory the evidence** - Catalog what evidence is actually offered, noting whether it provides direct or indirect support, comes from primary or secondary sources, and offers quantitative or qualitative data.
 
-3. **Assess evidence quality**:
-   - **Source reliability**: Who's making the claim? What's their expertise/bias?
-   - **Data quality**: Sample size, methodology, controls
-   - **Recency**: How current is this information?
-   - **Consistency**: Do multiple sources agree?
-   - **Directness**: Does evidence directly support the claim or require inference?
+3. **Assess evidence quality** - Evaluate source reliability by examining expertise and potential bias, scrutinize data quality including sample size and methodology, check how current the information is, determine whether multiple independent sources agree, and assess whether the evidence directly supports the claim or requires inferential leaps.
 
-4. **Look for counter-evidence**:
-   - What evidence contradicts this?
-   - Are there alternative explanations?
-   - What's being left out?
+4. **Look for counter-evidence** - Actively seek evidence that contradicts the claim, consider alternative explanations for the same observations, and identify what relevant evidence might have been omitted.
 
-5. **Rate the support level**:
-   - Strong: Multiple, high-quality, direct sources agree
-   - Moderate: Good evidence but some gaps or conflicts
-   - Weak: Limited, indirect, or questionable evidence
-   - Unsupported: No real evidence or mostly speculation
+5. **Rate the support level** - Characterize the overall strength as strong (multiple high-quality direct sources converge), moderate (solid evidence with some gaps or conflicts), weak (limited, indirect, or questionable evidence), or unsupported (speculation without substantive evidence).
 
-6. **Note confidence boundaries**:
-   - What would need to be true for this claim to hold?
-   - What additional evidence would strengthen/weaken it?
+6. **Note confidence boundaries** - Identify what assumptions must hold for the claim to be valid and what additional evidence would meaningfully strengthen or weaken the case.
 
 ## Examples
 
-### Evaluating a technical claim:
-"**Claim**: This new algorithm is 10x faster
+### Health intervention
 
-**Evidence inventory**:
-- One benchmark on specific dataset
-- No comparison methodology described
-- No error bars or variance reported
-- Tested on different hardware than baseline
+"**Claim**: This supplement reduces inflammation by 40%
 
-**Quality assessment**:
-- Single data point (weak)
-- Methodology unclear (concerning)
-- Not reproducible as described (weak)
-- Unfair comparison conditions (misleading)
+**Evidence inventory**: Company-funded study with 50 participants over eight weeks using self-reported inflammation scores, no placebo control, marketing photos on website.
 
-**Counter-evidence**: Comments suggest others can't reproduce these numbers
+**Quality assessment**: Funding source creates bias, small sample size limits generalizability, subjective measures are vulnerable to placebo effect, absence of control group prevents isolating causation, and marketing materials are cherry-picked.
 
-**Support level**: Weak to unsupported. The claim might be true under specific conditions, but current evidence doesn't establish the general case."
+**Counter-evidence**: Independent studies show no effect beyond placebo.
 
-### Evaluating a design decision:
-"**Claim**: Microservices will improve our development velocity
+**Support level**: Weak to unsupported. The claim requires controlled trials with objective measures and independent replication to be credible."
 
-**Evidence inventory**:
-- Two blog posts from companies that succeeded
-- One internal team's positive experience
-- Industry reports showing correlation
-- Consultant's recommendation
+### Policy proposal
 
-**Quality assessment**:
-- Success stories have survival bias (weak)
-- Internal example is relevant but single case (moderate)
-- Industry reports show correlation not causation (weak)
-- Consultant has incentive to recommend complex solutions (questionable)
+"**Claim**: Four-day school weeks improve student outcomes
 
-**Counter-evidence**:
-- Failed migrations rarely publicized
-- Our context differs from success stories
-- No evidence it solves our specific bottlenecks
+**Evidence inventory**: Three rural districts report higher test scores, parent satisfaction surveys show positive response, one academic paper analyzes cost savings, teacher retention improved in pilot districts.
 
-**Support level**: Weak. Evidence shows it CAN work, not that it WILL work for us."
+**Quality assessment**: Test scores show improvement but confounding factors aren't controlled for, parent satisfaction measures perception rather than learning, cost analysis doesn't address the student outcome claim directly, and teacher retention provides only indirect evidence of better conditions.
+
+**Counter-evidence**: Rural context may not generalize to urban or suburban settings, no long-term data exists on college readiness, childcare burden may harm working families, and districts that reversed course rarely publicize failures.
+
+**Support level**: Moderate but context-limited. Evidence suggests benefits in specific settings but requires broader testing across different community types before generalizing."
+
+### Personal decision
+
+"**Claim**: Morning exercise improves my productivity
+
+**Evidence inventory**: Feel more energetic on exercise days, completed more tasks during one week when exercising, read an article about executive performance, friend advocates for morning routines.
+
+**Quality assessment**: Personal feelings could reflect placebo or uncontrolled variables, one-week comparison has too many confounding factors, executive anecdotes may not transfer to different contexts, and individual variation makes friend's experience weak evidence.
+
+**Counter-evidence**: Haven't tracked sleep quality, caffeine intake, or work complexity as alternative explanations, morning exercise days might correlate with lighter schedules, and haven't tested afternoon or evening timing.
+
+**Support level**: Weak. Establishing causation requires controlled self-tracking that isolates exercise from other variables."
 
 ## When to use this skill
 
-- Evaluating research or studies
-- Fact-checking claims
-- Making evidence-based decisions
-- Analyzing arguments
-- Research synthesis
-- Risk assessment
-- Challenging assumptions
-- Due diligence
+- Before presenting information with associated figures or statistics to the user
+- Before stating anything as established fact rather than inference or possibility
+- When you notice yourself about to make a strong claim without having verified the underlying evidence
+- When evaluating whether research findings or expert recommendations warrant the confidence you're placing in them
+- Before accepting conclusions that would inform your recommendations or analysis
+- When claims are presented as fact but lack supporting documentation in the materials you've accessed
+- To distinguish between correlation and causation in arguments you're constructing or evaluating
+- When you're uncertain whether your confidence level matches the actual strength of available evidence

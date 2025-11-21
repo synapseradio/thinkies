@@ -11,41 +11,17 @@ Develop awareness of conversational direction and momentum to navigate discussio
 
 When sensing trajectory:
 
-1. **Notice current direction**:
-   - What questions keep coming up?
-   - What topics generate energy?
-   - What's being avoided or skipped?
-   - Where is curiosity strongest?
+1. **Notice current direction** - Pay attention to which questions keep coming up, what topics generate energy or engagement, what's being avoided or skipped over quickly, and where curiosity seems strongest as indicators of where the conversation naturally wants to go.
 
-2. **Anticipate natural destinations**:
-   - Where does this line of thinking lead?
-   - What decision point are we approaching?
-   - What understanding are we building toward?
-   - What question will we need to answer next?
+2. **Anticipate natural destinations** - Look ahead to where this line of thinking leads, what decision point you're approaching, what understanding you're building toward, and what question will need answering next to maintain productive momentum.
 
-3. **Recognize trajectory shifts**:
-   - When energy changes (excitement, confusion, resistance)
-   - When new information arrives
-   - When assumptions prove wrong
-   - When a tangent becomes the main thread
+3. **Recognize trajectory shifts** - Watch for changes in energy like excitement, confusion, or resistance, arrival of new information that changes the landscape, assumptions proving wrong, or tangents gaining enough substance that they become the main thread.
 
-4. **Name the trajectory explicitly**:
-   - "I notice we keep coming back to..."
-   - "This seems to be heading toward..."
-   - "I sense we're circling around..."
-   - "The real question emerging is..."
+4. **Name the trajectory explicitly** - Make the direction visible with observations like "I notice we keep coming back to..." or "This seems to be heading toward..." or "The real question emerging is..." so both parties can consciously decide whether to continue on this path.
 
-5. **Adjust navigation as needed**:
-   - Accelerate toward productive destinations
-   - Pause before wrong turns
-   - Surface the choice when paths diverge
-   - Return to main thread when tangents exhaust
+5. **Adjust navigation as needed** - Accelerate toward productive destinations when the path is clear, pause before wrong turns to reconsider, surface the choice explicitly when paths diverge, and return to the main thread when tangents have been exhausted.
 
-6. **Trust momentum shifts**:
-   - Sometimes the "tangent" is the real topic
-   - Sometimes resistance signals something important
-   - Sometimes the destination changes mid-journey
-   - Stay responsive to what's actually happening
+6. **Trust momentum shifts** - Recognize that sometimes the "tangent" reveals the real topic, resistance signals something important being avoided, and the destination legitimately changes mid-journey. Stay responsive to what's actually happening rather than rigidly following the original plan.
 
 ## Examples
 
@@ -121,13 +97,13 @@ When sensing trajectory:
 
 ## When to use this skill
 
-- Facilitating meetings
-- Long design discussions
-- Strategy conversations
-- Debugging complex problems
-- Mentoring sessions
-- Conflict resolution
-- Project planning
-- Any conversation where direction matters
-- When discussions feel stuck or circular
-- When energy shifts noticeably
+- When you notice the conversation circling back to the same topic repeatedly from different angles
+- When the user's questions seem to be building toward something specific but they haven't articulated it yet
+- When you sense the conversation drifting away from productive territory into tangents that aren't adding value
+- When energy shifts noticeably, whether toward excitement about a particular direction or resistance to the current path
+- Before long design discussions to help guide them toward decisions rather than endless exploration
+- When you realize the original question has evolved into a different question that should be acknowledged
+- When the conversation feels stuck or circular and explicitly naming the pattern could break the loop
+- To help users recognize when a tangent has become more important than the original topic
+- When facilitating complex problem-solving where keeping track of the larger trajectory helps maintain focus
+- Before strategy conversations where anticipating decision points helps structure the discussion productively

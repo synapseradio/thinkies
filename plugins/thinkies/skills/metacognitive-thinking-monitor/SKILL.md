@@ -11,41 +11,17 @@ Step back and observe your own thinking process as it happens.
 
 When monitoring your thinking:
 
-1. **Notice your thinking patterns**:
-   - Am I jumping to conclusions?
-   - Am I pattern-matching too quickly?
-   - Am I being more critical or more generous than I should be?
-   - "I notice I immediately thought of solution X without considering alternatives"
+1. **Observe thinking patterns** - Notice whether you're jumping to conclusions, pattern-matching prematurely, or applying uneven standards of scrutiny to different options.
 
-2. **Track your reasoning moves**:
-   - What kind of thinking am I doing right now?
-   - Is this analysis, synthesis, evaluation, exploration?
-   - Am I stuck in one mode when I should switch?
-   - "I've been analyzing for a while, maybe I should try generating instead"
+2. **Track reasoning modes** - Identify what type of thinking you're doing (analysis, synthesis, evaluation, exploration) and whether you've become stuck in one mode when switching would serve you better.
 
-3. **Observe emotional indicators**:
-   - Do I feel resistant to certain ideas?
-   - Am I getting defensive about an approach?
-   - Does something feel too easy or too hard?
-   - "I'm feeling frustrated, which might mean I'm on the wrong track"
+3. **Read emotional signals** - Recognize when resistance, defensiveness, frustration, or unexpected ease might indicate flawed reasoning, bias, or misalignment between approach and problem.
 
-4. **Check for biases in action**:
-   - Am I favoring familiar solutions?
-   - Am I being swayed by recency or vividness?
-   - Am I looking for evidence that confirms what I already think?
-   - "I'm gravitating toward this approach because it's what I know, not because it's best"
+4. **Detect active biases** - Catch yourself favoring familiar solutions, being swayed by recency or vividness, or seeking evidence that confirms existing beliefs rather than testing them.
 
-5. **Evaluate reasoning quality**:
-   - Is my logic actually sound here?
-   - Am I making unfounded leaps?
-   - Have I considered this carefully enough?
-   - "That conclusion doesn't actually follow from what I just said"
+5. **Verify logical soundness** - Check whether conclusions actually follow from premises, whether you're making unfounded leaps, and whether your reasoning withstands scrutiny.
 
-6. **Notice when you're lost**:
-   - Have I lost track of what I'm trying to do?
-   - Am I solving a different problem than I started with?
-   - Do I understand my own argument?
-   - "I've drifted away from the original question"
+6. **Maintain orientation** - Ensure you're still addressing the original question rather than drifting to adjacent problems, and that you understand your own argument clearly enough to defend it.
 
 ## Examples
 
@@ -69,12 +45,14 @@ When monitoring your thinking:
 
 ## When to use this skill
 
-- During complex reasoning or problem-solving
-- When you feel stuck or confused
-- After making a claim you're not fully comfortable with
-- When someone disagrees with you
-- During important decisions
-- When you notice frustration or resistance
-- While learning something new
-- When your conclusion surprises you
-- Anytime thinking feels too easy or too hard
+- During complex reasoning where multiple steps could go wrong
+- When you've made a claim but feel uncertain about its foundation
+- After someone disagrees with you in a way that deserves consideration
+- When noticing emotional reactions like frustration, resistance, or defensiveness
+- Before finalizing decisions with significant consequences
+- When thinking feels unexpectedly easy (might be oversimplifying) or hard (might be overcomplicating)
+- After reaching a conclusion that surprises you or contradicts prior beliefs
+
+## Related Skills
+
+**cycle-detect** - For specifically recognizing and breaking circular thinking loops. Use cycle-detect when you're stuck repeating the same thoughts, alternating between options without deciding, or making multiple attempts that feel similar. It provides focused strategies for identifying loop patterns and breaking out of them.

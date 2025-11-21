@@ -11,40 +11,17 @@ Discover meaningful relationships between seemingly unrelated ideas, concepts, o
 
 When connecting dots:
 
-1. **Gather the pieces**: What separate ideas or observations do you have?
-   - List them without forcing connections yet
-   - Note where each came from
-   - Keep them in view simultaneously
+1. **Assemble observations** - Gather separate ideas, facts, or observations without forcing connections, noting their origins and keeping them simultaneously visible.
 
-2. **Look for shared qualities**:
-   - Similar structures or patterns
-   - Common constraints or limitations
-   - Parallel problems or solutions
-   - Analogous mechanisms
-   - Matching rhythms or cycles
+2. **Identify shared qualities** - Look for similar structures, common constraints, parallel problems, analogous mechanisms, or matching patterns across seemingly disparate pieces.
 
-3. **Explore relationships**:
-   - "This reminds me of that because..."
-   - "Both of these involve..."
-   - "When A does X, B does Y, which suggests..."
-   - "The way this works is like how that works..."
+3. **Trace relationships** - Explore how pieces might relate mechanically, whether through cause and effect, mutual influence, shared dependencies, or coordinated behavior.
 
-4. **Test the connections**:
-   - Does this similarity go deeper than surface level?
-   - Does understanding one help understand the other?
-   - Does the connection predict something new?
-   - What would make this connection false?
+4. **Test connection validity** - Verify that similarities run deeper than surface resemblance by checking whether understanding one genuinely illuminates the other, whether the connection makes testable predictions, and what evidence would falsify it.
 
-5. **Map the network**:
-   - How do multiple connections relate to each other?
-   - Are there hubs where many things connect?
-   - Are there isolated clusters?
-   - What's the larger pattern emerging?
+5. **Map the network** - Identify how multiple connections relate to each other, revealing hubs where many things converge, isolated clusters, and larger emergent patterns.
 
-6. **Ask what it means**:
-   - Why do these things connect?
-   - What underlying principle makes this true?
-   - What does this reveal that wasn't visible before?
+6. **Extract meaning** - Determine what underlying principle or mechanism explains why these connections exist and what previously hidden insight this network reveals.
 
 ## Examples
 
@@ -98,11 +75,15 @@ When connecting dots:
 
 ## When to use this skill
 
-- Working with information from multiple sources
-- Trying to understand complex situations
-- Looking for underlying causes
-- Synthesizing research or feedback
-- Finding new solutions by analogy
-- Building mental models
-- Recognizing patterns across time or context
-- Trying to explain why multiple things are happening
+- When multiple observations seem related but the connection isn't obvious
+- While building system models that show how components interact and influence each other
+- To trace causal chains and understand how separate phenomena affect one another
+- When working with information from different domains or sources that might interconnect
+- To map networks of relationships and identify central hubs or isolated clusters
+- While explaining why multiple things consistently happen together
+- When seeking new solutions by recognizing analogous mechanisms from different contexts
+- To understand what underlying principle links apparently disparate observations
+
+## Related Skills
+
+**theme-find** - For identifying recurring conceptual patterns rather than mechanical relationships. Use theme-find when you need to name what keeps coming up, categorize observations into themes, or identify unifying concepts. connect-dots focuses on discovering how things causally relate and influence each other, while theme-find focuses on recognizing what conceptually unifies diverse observations.

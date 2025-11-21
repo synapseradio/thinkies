@@ -11,62 +11,42 @@ Honestly assess what you know, what you don't know, and what you need to know be
 
 When checking your knowledge state:
 
-1. **Inventory what you know**:
-   - What facts do I have?
-   - What have I verified vs assumed?
-   - Where did this information come from?
-   - "I know X because I read it in Y"
+1. **Catalog verified knowledge** - Distinguish what you've actually confirmed from what you've assumed or inferred, noting the source and reliability of each piece of information.
 
-2. **Identify knowledge gaps**:
-   - What am I missing?
-   - What do I think I know but haven't verified?
-   - What assumptions am I making?
-   - "I'm assuming X but I haven't checked if it's true"
+2. **Map the gaps** - Identify missing information, unverified assumptions, and areas where you're operating on inference rather than evidence, including both what you know you don't know and what you might not realize you're missing.
 
-3. **Distinguish types of uncertainty**:
-   - **Known unknowns**: "I don't know how this API works"
-   - **Unknown unknowns**: "What else might I be missing?"
-   - **Ambiguous knowns**: "I've heard conflicting information about this"
-   - **False certainty**: "I thought I knew this but now I'm not sure"
+3. **Assess readiness** - Determine whether current knowledge suffices for the task at hand by weighing the cost of being wrong against the effort of learning more, and identifying the minimum necessary knowledge to proceed safely.
 
-4. **Assess readiness to proceed**:
-   - Can I move forward with current knowledge?
-   - What's the cost of being wrong?
-   - What's the minimum I need to learn?
-   - "I need to know X before I can do Y"
+4. **Plan acquisition** - Decide what information would close critical gaps and where to find it most efficiently, focusing on verification methods that match the importance of the decision.
 
-5. **Plan knowledge acquisition**:
-   - What would close the critical gaps?
-   - Where can I find this information?
-   - What's the quickest way to verify?
-   - "I should check the documentation for X before assuming Y"
-
-6. **Set knowledge boundaries**:
-   - What's my domain of competence here?
-   - Where should I defer to others?
-   - When should I say "I don't know"?
+5. **Establish boundaries** - Recognize the limits of your competence, knowing when to defer to others or openly acknowledge uncertainty rather than projecting false confidence.
 
 ## Examples
 
-### Before starting a task:
+### Code implementation
 "Let me check what I actually know here. I know this codebase uses React and TypeScript. I think it uses Redux for state management, but I haven't verified that. I don't know what version of React or what testing framework they use. Before I write this component, I need to: 1) confirm the state management approach, 2) see how other components are structured, 3) check if there's a testing pattern to follow."
 
-### During problem-solving:
+### Debugging
 "I'm realizing I'm making an assumption about how this system works. I think the cache invalidates on write, but I've never actually verified that. Let me pause and check the cache implementation before I continue debugging. If I'm wrong about this, my whole approach is off."
 
-### When giving advice:
+### Giving advice
 "I know that approach A is generally recommended, but I don't know the specifics of your constraints. I'm not familiar with this particular library version, so there might be gotchas I'm unaware of. What I can say confidently is X. What I'm uncertain about is Y. What I should look up before giving you a firm recommendation is Z."
 
-### Recognizing false certainty:
+### Medical diagnosis
+"I know the patient presents with classic symptoms of condition A. I think they mentioned a family history, but I'm not certain I read that in the chart or assumed it. I don't know if they're taking any supplements that might interact. Before I prescribe, I need to: 1) confirm family history from chart, 2) ask about all supplements, 3) verify current medication list is complete."
+
+### Research planning
+"I know our hypothesis about user behavior, and I know we have access to analytics data. I think the sample size will be large enough for statistical significance, but I haven't calculated that. I don't know if we have permission to A/B test this feature or if that requires additional approval. Let me verify the sample size calculation and check the testing policy before we commit to this research design."
+
+### Recognizing false certainty
 "Wait, I just told you this works a certain way, but now that I think about it, I'm not actually sure. I might be confusing it with a different system. Let me verify that before you implement based on what I said."
 
 ## When to use this skill
 
-- Starting any new task or problem
-- Before making recommendations or decisions
-- When you feel uncertain but aren't sure why
-- Before committing to an approach
-- When someone asks for your expertise
-- After getting unexpected results (maybe you misunderstood something)
-- When about to say "I think..." or "I assume..."
-- Before researching (to focus your search)
+- Before starting any new task to understand what you already know versus what you need to learn
+- When you feel uncertain but can't pinpoint the source of that uncertainty
+- Before making recommendations or committing to an approach that others will rely on
+- After encountering unexpected results that might indicate misunderstanding
+- When you notice yourself saying "I think" or "I assume" about something presented as fact
+- Before researching, to focus effort on actual gaps rather than restudying known material
+- When someone asks for expertise you may not fully possess in this specific context

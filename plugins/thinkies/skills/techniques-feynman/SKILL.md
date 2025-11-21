@@ -11,33 +11,13 @@ Learn and validate understanding by explaining concepts as if teaching someone w
 
 The technique has four steps that reveal what you truly understand versus what you only think you understand:
 
-1. **Choose and explain the concept**:
-   - Pick the specific concept you want to understand
-   - Write out an explanation as if teaching a bright 12-year-old
-   - Use plain language, no jargon unless you define it
-   - Use concrete examples and analogies
-   - "Imagine you're explaining this to someone smart but without your background"
+1. **Choose and explain the concept** - Pick the specific concept you want to understand and write out an explanation as if teaching a bright 12-year-old, using plain language with concrete examples and analogies.
 
-2. **Identify gaps**:
-   - Where did you struggle to explain?
-   - Where did you fall back on jargon or hand-waving?
-   - What questions would a curious student ask that you can't answer?
-   - "I said 'it just works' or 'basically' - that's a gap"
-   - Mark every spot where you're fuzzy
+2. **Identify gaps** - Mark where you struggled to explain, fell back on jargon or hand-waving, or can't answer questions a curious student would ask.
 
-3. **Fill the gaps**:
-   - Go back to source material for unclear areas
-   - Research the specific questions you couldn't answer
-   - Find better analogies for abstract concepts
-   - Work through examples until the mechanism is clear
-   - Don't move on until you can explain the gap simply
+3. **Fill the gaps** - Return to source material for unclear areas, research specific questions you couldn't answer, find better analogies for abstract concepts, and work through examples until the mechanism is clear.
 
-4. **Simplify and refine**:
-   - Remove unnecessary complexity from your explanation
-   - Find clearer analogies
-   - Organize the explanation logically
-   - Test: Could someone actually learn this from your explanation?
-   - The simpler you can make it, the better you understand it
+4. **Simplify and refine** - Remove unnecessary complexity, find clearer analogies, organize logically, and test whether someone could actually learn this from your explanation.
 
 ## Examples
 
@@ -81,12 +61,11 @@ Problems: You might find a small dip (local minimum) but miss the actual valley.
 
 ## When to use this skill
 
-- Learning a new technology, framework, or domain
-- Before a technical interview or presentation
-- When documentation seems clear but you can't apply it
-- Debugging conceptual confusion on your team
-- Preparing to mentor or teach
-- Validating that you actually understand something
-- Converting expert knowledge into accessible documentation
-- Revealing hidden assumptions in your thinking
-- Building genuine intuition versus surface familiarity
+- When learning a new technology or domain and you need to verify you actually understand rather than just recognize terms
+- Before technical interviews or presentations to identify knowledge gaps while you can still fill them
+- When documentation seems clear but you can't apply it, suggesting surface familiarity without real understanding
+- When team members seem confused and you suspect the explanation relies on unstated expert context
+- Before mentoring or teaching to ensure you can explain without falling back on jargon
+- When you catch yourself saying "it just works" or "basically" instead of explaining the actual mechanism
+- Before creating documentation to test whether you're communicating or just demonstrating expertise
+- When you need genuine intuition for making decisions rather than memorized rules you can't adapt

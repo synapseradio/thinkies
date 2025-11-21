@@ -11,42 +11,17 @@ Change direction gracefully when understanding shifts, making revision a natural
 
 When reconsidering:
 
-1. **Notice the signal to reconsider**:
-   - New information contradicts assumptions
-   - Solution feels increasingly forced
-   - Better understanding reveals simpler path
-   - Initial framing missed the real problem
-   - Energy drains from current direction
+1. **Notice the signal to reconsider** - Watch for new information contradicting your assumptions, solutions feeling increasingly forced, better understanding revealing simpler paths, initial framing missing the real problem, or energy draining from the current direction.
 
-2. **Name what's happening explicitly**:
-   - "I'm reconsitering my earlier thought..."
-   - "This new information changes things..."
-   - "I think I was solving the wrong problem..."
-   - "Let me back up and look at this differently..."
+2. **Name what's happening explicitly** - State clearly that you're reconsidering with phrases like "I'm reconsidering my earlier thought..." or "This new information changes things..." or "Let me back up and look at this differently." Make the pivot visible rather than quietly shifting.
 
-3. **Show what changed**:
-   - What did you think before?
-   - What new information arrived?
-   - How does this change your understanding?
-   - What do you see now that you missed?
+3. **Show what changed** - Articulate what you thought before, what new information arrived, how this changes your understanding, and what you see now that you missed initially. This transparency helps others follow your reasoning and trust the revision.
 
-4. **Don't defend the old path**:
-   - No need to justify previous thinking
-   - It made sense with previous information
-   - Changing your mind is evidence of learning
-   - The goal is truth, not consistency
+4. **Don't defend the old path** - Resist justifying your previous thinking since it made sense with the information you had then. Changing your mind demonstrates learning rather than inconsistency, and the goal is truth rather than appearing right.
 
-5. **Make the shift clear**:
-   - Explicitly let go of the old direction
-   - State the new direction clearly
-   - Acknowledge what this means for work done
-   - Move forward without lingering
+5. **Make the shift clear** - Explicitly let go of the old direction and state the new one clearly, acknowledging what this means for work already done. Move forward decisively without lingering on the abandoned path.
 
-6. **Model intellectual honesty**:
-   - Treat revision as normal and valuable
-   - Show thinking can be provisional
-   - Demonstrate comfort with uncertainty
-   - Value truth over being right
+6. **Model intellectual honesty** - Treat revision as normal and valuable rather than failure, showing that thinking can be provisional. Demonstrate comfort with uncertainty and prioritize truth over consistency or face-saving.
 
 ## Examples
 
@@ -126,13 +101,13 @@ When reconsidering:
 
 ## When to use this skill
 
-- When new information contradicts plans
-- When implementation reveals design flaws
-- When feedback challenges assumptions
-- When better understanding emerges
-- When initial framing proves wrong
-- During code reviews
-- In design discussions
-- When teaching (modeling intellectual flexibility)
-- When debugging reveals root causes
-- Anytime holding onto wrong direction serves no one
+- When you realize mid-response that your initial analysis was heading in the wrong direction
+- When new information from the user contradicts assumptions you made earlier in the conversation
+- When you notice yourself trying to force a solution that's becoming increasingly complicated
+- When implementation details reveal that your proposed design has fundamental flaws
+- When the user's feedback makes you realize you misunderstood the actual problem
+- Before committing to a path that feels wrong even though you suggested it moments ago
+- When debugging reveals that the root cause is completely different from your initial hypothesis
+- To model intellectual flexibility and show that changing direction based on evidence is valuable
+- When you catch yourself defending a position rather than seeking truth
+- Anytime holding onto the wrong direction would waste the user's time or resources

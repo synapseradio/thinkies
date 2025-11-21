@@ -11,115 +11,75 @@ Systematically drill down through causation layers to find the fundamental sourc
 
 When finding root causes:
 
-1. **Start with the problem**: State what went wrong clearly and specifically
-   - Avoid vague descriptions
-   - Include impact and context
-   - "X happened, causing Y"
+1. **State the problem** - Describe what went wrong with specific impact and context, avoiding vague descriptions that obscure the actual failure.
 
-2. **Ask "Why?" iteratively**:
-   - Why did this happen? [Answer]
-   - Why did [answer] happen? [Deeper answer]
-   - Continue until you reach a root cause
-   - Usually takes 3-7 iterations, not always 5
+2. **Ask why iteratively** - Begin with the immediate cause and ask why it occurred, then ask why that cause occurred, continuing through typically three to seven layers until reaching a fundamental issue that cannot be meaningfully questioned further.
 
-3. **Stay factual at each level**:
-   - Base answers on evidence, not speculation
-   - If unsure, note it and investigate
-   - Avoid jumping to conclusions
+3. **Ground each answer in evidence** - Base causal explanations on observable facts rather than speculation, noting uncertainty where it exists and investigating gaps before proceeding deeper.
 
-4. **Watch for multiple causes**:
-   - Problems often have multiple roots
-   - Branch your investigation when needed
-   - Some branches might be more important
+4. **Branch when multiple causes emerge** - Recognize that problems often stem from several contributing factors and pursue parallel investigation paths, though some branches will prove more significant than others.
 
-5. **Recognize root causes**:
-   - Can't ask "why" meaningfully anymore
-   - Reached a process/system/decision level
-   - Found something you can actually fix
-   - Hit organizational or physics limits
+5. **Recognize when you reach bedrock** - Identify root causes by their position at the process, system, or decision level where further questioning becomes unproductive, where you've found something actionable, or where you've hit organizational or physical constraints.
 
-6. **Distinguish symptoms from causes**:
-   - Symptoms: What you observe
-   - Proximate causes: Immediate triggers
-   - Root causes: Fundamental issues
-
-7. **Validate the chain**:
-   - Work backwards: Would fixing root prevent problem?
-   - Are all links necessary?
-   - Test when possible
+6. **Validate the causal chain** - Work backward from proposed root to original problem, testing whether addressing the root cause would prevent recurrence and confirming that each link in the chain is necessary.
 
 ## Examples
 
-### Root cause analysis of a production outage:
-"**Problem**: Website went down for 2 hours
+### Medical clinic scheduling
 
-**Why #1**: Database server ran out of connections
-→ **Why?**: Connection pool was exhausted
+"**Problem**: Patient wait times average 45 minutes beyond appointment time
 
-**Why #2**: Apps weren't releasing connections
-→ **Why?**: Missing connection timeout configuration
+**Why?**: Doctors run behind schedule throughout the day
+→ **Why?**: Appointments take longer than the 15-minute slots allocated
+→ **Why?**: Patients often have multiple concerns to address
+→ **Why?**: No mechanism for patients to indicate appointment complexity when booking
+→ **Why?**: Scheduling system assumes all appointments are equivalent
 
-**Why #3**: Timeouts were removed during last update
-→ **Why?**: Developer copied config from test environment
+**Root cause**: Appointment scheduling lacks complexity differentiation
 
-**Why #4**: Test environment doesn't need timeouts
-→ **Why?**: Test has unlimited connections for debugging
+**Validation**: If the system could distinguish simple from complex visits and allocate time accordingly, doctors would stay on schedule and patient wait times would decrease."
 
-**Why #5**: No config validation between environments
-→ **Root cause**: Lack of environment-specific config validation
+### Bakery waste
 
-**Solution**: Add automated config validation in deployment pipeline"
+"**Problem**: Bakery discards 30% of daily production
 
-### Root cause of a team problem:
-"**Problem**: Features consistently delivered late
-
-**Why #1**: Development takes longer than estimated
-→ **Why?**: Unexpected complexity discovered during coding
-
-**Why #2**: Complexity not known during estimation
-→ **Why?**: Estimates done without technical investigation
-
-**Why #3**: No time allocated for investigation
-→ **Why?**: Pressure to commit to timelines quickly
-
-**Why #4**: Business needs definite dates for planning
-→ **Why?**: No process for handling uncertainty
-
-**Root cause**: Organization lacks framework for communicating and managing technical uncertainty
+**Why?**: Too much inventory remains unsold
+→ **Why?**: Production volumes don't match actual demand
+→ **Why?**: Baking decisions made at 4 AM without current data
+→ **Why?**: No system for tracking daily demand patterns
 
 **But also** (parallel branch):
-**Why #2b**: Frequent context switching
-→ **Why?**: Developers pulled into support issues
-→ **Why?**: No dedicated support rotation
-→ **Second root**: Lack of operational/development separation"
+→ **Why?**: Customer arrivals highly variable
+→ **Why?**: No incentive for customers to pre-order
+→ **Why?**: Pre-ordering process doesn't exist
 
-### Root cause of performance degradation:
-"**Problem**: API response times doubled over 6 months
+**Root causes**: Lack of demand forecasting and absence of pre-order system
 
-**Why #1**: Database queries taking longer
-→ **Why?**: Table sizes grew significantly
+**Validation**: Implementing demand tracking and pre-orders would allow production to align with actual need, reducing waste significantly."
 
-**Why #2**: More data than expected
-→ **Why?**: Not archiving old records
+### Community garden conflicts
 
-**Why #3**: Archival process was disabled
-→ **Why?**: Caused errors with reporting
+"**Problem**: Gardeners frequently argue about water usage
 
-**Why #4**: Reports expect all historical data present
-→ **Why?**: Reports designed with assumption of small data
+**Why?**: Some plots use significantly more water than others
+→ **Why?**: No usage limits or monitoring in place
+→ **Why?**: Garden started small where informal norms worked
+→ **Why?**: Water seemed abundant initially
+→ **Why?**: Well capacity appeared unlimited until drought revealed constraints
 
-**Why #5**: Original design didn't anticipate scale
-→ **Root cause**: Lack of data growth planning in architecture
+**Root cause**: Resource governance didn't evolve as the garden scaled
 
-**Validation**: If we had planned for data growth, we would have designed reports to work with archived data"
+**Validation**: If usage rules had been established as the garden grew, conflicts would have been prevented when scarcity emerged."
 
 ## When to use this skill
 
-- Post-incident analysis
-- Debugging persistent problems
-- Process improvement
-- Quality issues
-- Performance degradation
-- Team dysfunction
-- Customer complaint analysis
-- Preventing problem recurrence
+- When you notice yourself explaining what happened without explaining why it happened
+- Before recommending solutions to verify you're addressing fundamental causes rather than symptoms
+- When problems recur despite attempted fixes, suggesting earlier analysis missed the actual root
+- To distinguish between immediate triggers and underlying systemic issues driving failures
+- When you need to move from incident response to prevention
+- Before presenting analysis to verify the causal chain holds under scrutiny
+
+## Related Skills
+
+**decompose** - For breaking down complexity into structural components. Use decompose when you need to understand how a system is organized, identify all the parts, or plan work distribution. root-cause drills down through layers of causation to find fundamental "why" answers, while decompose breaks things into structural pieces to understand composition and organization.

@@ -11,35 +11,15 @@ Borrow solutions and patterns from unrelated fields to gain fresh insights.
 
 When transferring across domains:
 
-1. **Identify the core challenge**: What's the essential problem, stripped of domain-specific details?
-   - Abstract away the technical language
-   - Find the underlying pattern
-   - "Essentially, this is about..."
+1. **Identify the core challenge** - Strip away domain-specific terminology to reveal the essential pattern you're dealing with, asking what fundamental problem this represents when abstracted from its technical context, and completing the sentence "Essentially, this is about..." until the pattern becomes clear.
 
-2. **Search for analogous domains**:
-   - What other fields deal with similar patterns?
-   - Where else does this type of problem occur?
-   - Consider completely different contexts:
-     - Nature/biology
-     - Other industries
-     - Games/sports
-     - Social systems
-     - Physical processes
+2. **Search for analogous domains** - Consider what completely different fields deal with similar underlying patterns, exploring diverse contexts like biological systems, other industries, physical processes, games and sports, or social structures, and asking where else this type of challenge naturally occurs.
 
-3. **Study how they solve it**:
-   - What strategies do they use?
-   - Why does it work in that context?
-   - What constraints shaped their solution?
+3. **Study their solutions** - Examine what strategies the other domain uses to handle this pattern, understand why those approaches work in their context, identify what constraints shaped their solutions, and resist the urge to dismiss approaches that seem too different at first.
 
-4. **Map back to your domain**:
-   - What would their solution look like here?
-   - Which aspects transfer directly?
-   - What needs adaptation?
-   - What new possibilities does this reveal?
+4. **Map back to your domain** - Translate the borrowed solution into your context by specifying what it would look like here, determining which aspects transfer directly versus what requires adaptation, and discovering what new possibilities this perspective reveals that your field's conventional wisdom might miss.
 
-5. **Extract principles**:
-   - What universal pattern did you discover?
-   - Could this apply to other problems too?
+5. **Extract the universal principle** - Articulate what fundamental pattern you discovered that transcends both domains, considering whether this principle could apply to other problems you face, and noting what makes the pattern portable across different contexts.
 
 ## Examples
 
@@ -94,11 +74,15 @@ For our API:
 
 ## When to use this skill
 
-- Stuck on a problem with no obvious solution
-- Need creative breakthrough
-- Want to challenge industry assumptions
-- Looking for innovative approaches
-- Traditional solutions aren't working
-- Need to explain complex ideas simply
-- Building mental models
-- Cross-functional team communication
+- When approaches conventional to your field keep failing and you need genuinely different thinking
+- Before concluding a problem is novel or unique, to check if other domains have already solved similar patterns
+- When you notice yourself thinking "this is just like..." and want to develop that analogy systematically rather than superficially
+- If you're explaining a complex concept and suspect a different domain might provide a clearer mental model
+- When you catch yourself stuck in field-specific assumptions that might not apply to the underlying problem
+- Before building something from scratch, to verify whether proven solutions exist in adjacent or distant fields
+- When you want to extract portable principles from successful approaches in other contexts
+- If traditional domain expertise has become a constraint rather than an asset for this particular challenge
+
+## Related Skills
+
+**lateral-think** - For challenging assumptions through provocative questioning and reversals. Use lateral-think when you want to make unconventional leaps, reverse problems, or question fundamental constraints directly. domain-transfer systematically studies and maps patterns from other fields, while lateral-think breaks conventional thinking through provocations and assumption challenges.

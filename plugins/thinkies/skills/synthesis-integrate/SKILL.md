@@ -11,49 +11,26 @@ Combine multiple ideas, perspectives, or insights into a coherent whole that's g
 
 When integrating:
 
-1. **Lay out what you're combining**:
-   - List the pieces clearly
-   - Note where they come from
-   - Acknowledge their individual value
-   - Don't simplify them yet
+1. **Lay out what you're combining** - List the pieces clearly, note their origins and individual value, and resist simplifying them yet.
 
-2. **Find points of contact**:
-   - Where do they naturally touch?
-   - Where do they support each other?
-   - Where do they fill each other's gaps?
-   - What does one explain about another?
+2. **Find points of contact** - Identify where ideas naturally touch, where they support each other or fill gaps, and what one explains about another.
 
-3. **Address tensions**:
-   - Where do they conflict?
-   - Are conflicts real or apparent?
-   - Can both be true in different contexts?
-   - What does the tension reveal?
+3. **Address tensions** - Determine where conflicts exist, whether they're real or apparent, whether both can be true in different contexts, and what the tension itself reveals.
 
-4. **Build the synthesis**:
-   - What's the larger picture they create together?
-   - How does each piece fit in?
-   - What emerges that wasn't in any single piece?
-   - What's the organizing principle?
+4. **Build the synthesis** - Describe the larger picture they create together, how each piece fits, what emerges that wasn't in any single piece, and the organizing principle.
 
-5. **Test coherence**:
-   - Does this hold together?
-   - Does it preserve what matters from each piece?
-   - Does it create new understanding?
-   - Can you explain it simply?
+5. **Test coherence** - Check whether this holds together, preserves what matters from each piece, creates new understanding, and can be explained simply.
 
-6. **Check what's missing**:
-   - What gaps remain?
-   - What doesn't fit?
-   - What new questions arise?
+6. **Check what's missing** - Identify remaining gaps, what doesn't fit, and what new questions arise.
 
 ## Examples
 
-### Integrating technical perspectives:
-"**Performance engineer says**: We need caching everywhere, database queries are killing us.
+### System design tensions
+"**Performance engineer**: We need caching everywhere, database queries are slow.
 
-**Security engineer says**: Caching sensitive data is a huge risk, we need fresh data.
+**Security engineer**: Caching sensitive data creates risk, we need fresh data.
 
-**User researcher says**: Users care about consistency more than raw speed.
+**User researcher**: Users expect consistency more than speed.
 
 **Tension**: Speed vs security vs consistency.
 
@@ -64,28 +41,28 @@ When integrating:
 - Performance problem is real (slow queries)
 - Security concern is real (cached sensitive data)
 - Consistency issue is real (stale data confusion)
-- All three are trying to serve the user
+- All three aim to serve user needs
 
 **Integrated view**:
-The real question isn't whether to cache, but what data characteristics matter for each use case:
+The question isn't whether to cache, but what data characteristics matter for each use case:
 - **Cacheable**: Public data, computed results, reference data (speed safe)
 - **Fresh-required**: Security state, permissions, user identity (security critical)
 - **Consistency-critical**: Anything user modifies or depends on for decisions (UX critical)
 
-**Synthesis**: Design caching strategy by data characteristics, not by blanket rules. Some data should be cached aggressively, some should never be cached, some needs versioning to detect staleness.
+**Synthesis**: Design caching strategy by data characteristics, not blanket rules. Some data should be cached aggressively, some never cached, some needs versioning to detect staleness.
 
-**What emerges**: The performance problem might be fixable without caching sensitive data - we're solving the wrong problem by caching when we should be optimizing queries or data model.
+**What emerges**: The performance problem might be solvable without caching sensitive data - we're addressing the wrong problem by caching when we should optimize queries or data model.
 
 **Unified principle**: Match data freshness strategy to the consequences of staleness for that specific data."
 
-### Integrating user feedback and business needs:
-"**Users say**: The product is too expensive, we need a cheaper tier.
+### Product strategy conflicts
+"**Users**: The product is too expensive, we need a cheaper tier.
 
-**Business says**: We can't lower prices, margins are already thin.
+**Business**: We can't lower prices, margins are thin.
 
-**Support says**: Free tier generates massive support burden.
+**Support**: Free tier generates high support burden.
 
-**Product says**: Users want features we haven't built yet.
+**Product**: Users want features we haven't built yet.
 
 **Tension map**:
 - Price vs value received (user perspective)
@@ -93,9 +70,9 @@ The real question isn't whether to cache, but what data characteristics matter f
 - Features vs support load (operational perspective)
 
 **Failed integration**: Lower price + cut features.
-*Doesn't solve value perception, might hurt business more.*
+*Doesn't solve value perception, might reduce revenue.*
 
-**Looking at what's really being said**:
+**Looking at what's being said**:
 - Users: Not getting enough value for price
 - Business: Can't reduce revenue per customer
 - Support: Low-value customers are expensive to serve
@@ -118,12 +95,12 @@ Segment by value delivered, not price:
 
 **New understanding**: We were trying to be everything to everyone. Integration reveals that differentiation serves all stakeholders better than compromise."
 
-### Integrating learning from multiple failures:
-"**Project A failed**: Because we didn't involve users early enough.
+### Learning from project failures
+"**Project A failed**: We didn't involve users early enough.
 
-**Project B failed**: Because we spent too long gathering requirements.
+**Project B failed**: We spent too long gathering requirements.
 
-**Project C failed**: Because scope kept changing.
+**Project C failed**: Scope kept changing.
 
 **Apparent contradiction**: Need more user input vs need to move faster vs need stable scope.
 
@@ -132,7 +109,7 @@ Segment by value delivered, not price:
 - Project B: Analysis paralysis, market moved on
 - Project C: Couldn't say no, tried to do everything
 
-**Not contradictory - they're about timing and boundaries**:
+**Not contradictory - about timing and boundaries**:
 - A: Feedback loop too late
 - B: Feedback loop too slow
 - C: Feedback loop too permissive
@@ -175,12 +152,10 @@ Match your speed and quality bar to the cost of being wrong:
 
 ## When to use this skill
 
-- Combining multiple viewpoints
-- Resolving apparent contradictions
-- Building comprehensive understanding
-- Creating shared vision from diverse inputs
-- Synthesizing research or feedback
-- Finding solutions that satisfy multiple constraints
-- Moving from analysis to action
-- Building team alignment
-- Creating frameworks from examples
+- When you have multiple perspectives or viewpoints that each seem valid but don't obviously connect
+- Before dismissing conflicting information as simply wrong rather than exploring what each reveals
+- When analysis has generated insights but you haven't yet woven them into actionable understanding
+- When team members advocate for different approaches and you need alignment rather than choosing sides
+- When research or feedback points in different directions and you need to find the coherent signal
+- When constraints seem to conflict and you're tempted to sacrifice one rather than satisfy all
+- Before presenting disparate findings without showing how they relate to form a complete picture

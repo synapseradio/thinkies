@@ -11,39 +11,17 @@ Identify the fundamental truths and generalizable rules that underlie specific o
 
 When extracting principles:
 
-1. **Start with specifics**: What concrete examples or observations do you have?
-   - Real situations, not abstractions
-   - Specific outcomes and conditions
-   - What actually happened, not theories
+1. **Start with specifics** - Gather concrete examples with real outcomes and conditions, focusing on what actually happened rather than theories.
 
-2. **Ask why it's true**:
-   - What made this work or fail?
-   - What conditions were necessary?
-   - What would make it false?
-   - What's the mechanism?
+2. **Ask why it's true** - Determine what made this work or fail, what conditions were necessary, what would make it false, and what the underlying mechanism is.
 
-3. **Generalize carefully**:
-   - Remove context-specific details
-   - Keep what's essential
-   - Test if it applies elsewhere
-   - Check if it predicts new situations
+3. **Generalize carefully** - Remove context-specific details while keeping what's essential, then test whether it applies elsewhere and predicts new situations.
 
-4. **State the principle**:
-   - Make it clear and actionable
-   - Avoid vague language
-   - Include boundaries (when it applies, when it doesn't)
-   - Explain the underlying reason
+4. **State the principle** - Express it clearly and actionably, avoid vague language, include boundaries of applicability, and explain the underlying reason.
 
-5. **Test the principle**:
-   - Does it explain all your examples?
-   - Does it predict things you haven't seen?
-   - Are there counter-examples?
-   - Is it actually several principles?
+5. **Test the principle** - Verify it explains all your examples, predicts things you haven't seen, and check for counter-examples or whether it's actually several principles.
 
-6. **Check the level**:
-   - Is this too specific (still has unnecessary details)?
-   - Is this too broad (loses meaning)?
-   - What's the right level of abstraction?
+6. **Check the level** - Assess whether it's too specific with unnecessary details, too broad and loses meaning, or at the right level of abstraction.
 
 ## Examples
 
@@ -144,12 +122,11 @@ When extracting principles:
 
 ## When to use this skill
 
-- Learning from experience
-- Creating team guidelines
-- Understanding why something works
-- Teaching others
-- Making design decisions
-- Building mental models
-- Moving from examples to understanding
-- Creating reusable knowledge
-- Avoiding dogma while keeping wisdom
+- When you've observed a pattern multiple times but haven't articulated why it occurs
+- Before creating guidelines or rules, to ensure they capture the underlying truth rather than surface patterns
+- When teaching others and you need to move from "here's what happened" to "here's why this matters"
+- Before making design decisions based on past experience, to verify the lesson actually applies
+- When building mental models and you need to distill what's fundamental versus contextual
+- After project retrospectives when you want reusable knowledge, not just a story about what happened
+- When you catch yourself following advice without understanding why it works or when it doesn't
+- Before advocating for a practice, to distinguish timeless principles from temporary solutions

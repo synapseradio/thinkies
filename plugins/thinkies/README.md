@@ -4,7 +4,7 @@ A comprehensive collection of thinking tools and reasoning techniques designed t
 
 ## Overview
 
-Thinkies provides 48 specialized cognitive skills organized into 8 categories. Each skill offers structured approaches to different aspects of thinking, from creative exploration to rigorous analysis.
+Thinkies provides 46 specialized cognitive skills organized into 8 categories. Each skill offers structured approaches to different aspects of thinking, from creative exploration to rigorous analysis.
 
 ## Quick Start
 
@@ -12,9 +12,9 @@ Simply describe your problem or question, and Claude will automatically use rele
 
 Examples:
 - "I'm stuck on this architecture decision" → May trigger `branch`, `weigh-options`, or `six-hats`
-- "Something feels off about this solution" → May trigger `follow-intuition` or `assumption-reveal`
+- "Something feels off about this solution" → May trigger `follow-intuition` or `socratic`
 - "Help me understand this complex system" → May trigger `decompose` or `systems-thinking`
-- "I need creative solutions" → May trigger `scamper`, `lateral-think`, or `random-input`
+- "I need creative solutions" → May trigger `scamper`, `lateral-think`, or `domain-transfer`
 
 ## Skill Categories
 
@@ -29,11 +29,10 @@ Discover and investigate through curiosity and systematic exploration.
 - **perspective-shift** - View from different vantage points
 - **domain-transfer** - Borrow solutions from other fields
 
-### 🔬 Analysis (8 skills)
+### 🔬 Analysis (7 skills)
 Critical thinking and systematic evaluation methods.
 
 - **evidence-check** - Evaluate evidence quality and strength
-- **assumption-reveal** - Uncover hidden premises
 - **fallacy-detect** - Identify logical errors
 - **alternatives** - Generate alternative explanations
 - **logic-trace** - Validate reasoning chains
@@ -41,13 +40,12 @@ Critical thinking and systematic evaluation methods.
 - **root-cause** - Find fundamental causes (Five Whys)
 - **opposite-case** - Build counter-arguments
 
-### 💡 Creativity (6 skills)
+### 💡 Creativity (5 skills)
 Generate novel ideas and innovative solutions.
 
 - **scamper** - Systematic creativity (Substitute, Combine, Adapt, Modify, Put to other use, Eliminate, Reverse)
 - **lateral-think** - Make non-obvious connections
 - **constraint-play** - Use limitations creatively
-- **random-input** - Inject unexpected elements
 - **reversal** - Flip assumptions upside down
 - **metaphor-build** - Create explanatory analogies
 
@@ -108,13 +106,13 @@ Established structured thinking methodologies.
 
 ### For Creative Breakthrough
 1. `constraint-play` → Embrace limitations
-2. `random-input` → Inject unexpected elements
-3. `lateral-think` → Make unusual connections
+2. `lateral-think` → Make unusual connections
+3. `domain-transfer` → Borrow from other fields
 4. `scamper` → Systematically transform
 
 ### For Decision Making
 1. `fork-detect` → Identify the decision point
-2. `assumption-reveal` → Surface hidden beliefs
+2. `socratic` → Surface hidden beliefs through questioning
 3. `premortem` → Imagine failure scenarios
 4. `priority-matrix` → Choose based on impact/effort
 
@@ -163,7 +161,7 @@ Claude: [Uses `follow-intuition` to explore hunches, `alternatives` to generate 
 ### Making an Architecture Decision
 ```
 You: "Should we use microservices or keep the monolith?"
-Claude: [Uses `fork-detect` to recognize this as critical, `assumption-reveal` to surface beliefs, `six-hats` for perspectives, and `premortem` to stress-test]
+Claude: [Uses `fork-detect` to recognize this as critical, `socratic` to surface beliefs, `six-hats` for perspectives, and `premortem` to stress-test]
 ```
 
 ### Stuck on a Design
