@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "thinkies",
+  "description": "A curated collection of cognitive reasoning and problem-solving plugins for Claude Code",
+  "version": "1.0.0",
+  "owner": {
+    "name": "synapseradio"
+  },
+  "plugins": [
+    {
+      "name": "thinkies",
+      "description": "Comprehensive collection of 48 cognitive reasoning skills for systematic thinking and problem-solving",
+      "version": "1.0.0",
+      "source": "./plugins/thinkies",
+      "category": "development",
+      "author": {
+        "name": "synapseradio"
+      },
+      "repository": "https://github.com/synapseradio/thinkies",
+      "keywords": [
+        "thinking",
+        "reasoning",
+        "problem-solving",
+        "creativity",
+        "analysis",
+        "decision-making",
+        "metacognition",
+        "cognitive-tools",
+        "techniques",
+        "review",
+        "design-thinking",
+        "critical-thinking",
+        "exploration",
+        "synthesis"
+      ]
+    }
+  ]
+}

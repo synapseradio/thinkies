@@ -1,0 +1,122 @@
+{
+  "name": "thinkies",
+  "version": "1.0.0",
+  "description": "Cognitive reasoning skills for systematic thinking and problem-solving",
+  "author": "synapseradio",
+  "skills": {
+    "count": 48,
+    "categories": {
+      "exploration": {
+        "description": "Discovery and investigation techniques",
+        "skills": [
+          "wonder",
+          "branch",
+          "follow-intuition",
+          "tree-explore",
+          "graph-wander",
+          "perspective-shift",
+          "domain-transfer"
+        ]
+      },
+      "analysis": {
+        "description": "Critical thinking and evaluation methods",
+        "skills": [
+          "evidence-check",
+          "assumption-reveal",
+          "fallacy-detect",
+          "alternatives",
+          "logic-trace",
+          "decompose",
+          "root-cause",
+          "opposite-case"
+        ]
+      },
+      "creativity": {
+        "description": "Ideation and innovation techniques",
+        "skills": [
+          "scamper",
+          "lateral-think",
+          "constraint-play",
+          "random-input",
+          "reversal",
+          "metaphor-build"
+        ]
+      },
+      "synthesis": {
+        "description": "Integration and pattern-finding methods",
+        "skills": [
+          "connect-dots",
+          "theme-find",
+          "principle-extract",
+          "integrate",
+          "abstraction-ladder"
+        ]
+      },
+      "metacognitive": {
+        "description": "Self-awareness and cognitive monitoring",
+        "skills": [
+          "knowledge-check",
+          "thinking-monitor",
+          "confidence-calibrate",
+          "cognitive-load",
+          "attention-anchor",
+          "cycle-detect"
+        ]
+      },
+      "decision": {
+        "description": "Choice-making and prioritization frameworks",
+        "skills": [
+          "weigh-options",
+          "priority-matrix",
+          "leverage-find",
+          "premortem",
+          "fork-detect"
+        ]
+      },
+      "dialogue": {
+        "description": "Conversation and collaborative thinking",
+        "skills": [
+          "thinking-together",
+          "progressive-reveal",
+          "trajectory-sense",
+          "reconsider"
+        ]
+      },
+      "techniques": {
+        "description": "Structured reasoning methodologies",
+        "skills": [
+          "six-hats",
+          "feynman",
+          "socratic",
+          "dialectic",
+          "first-principles",
+          "systems-thinking",
+          "scenario-planning"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "thinking",
+    "reasoning",
+    "problem-solving",
+    "creativity",
+    "analysis",
+    "decision-making",
+    "metacognition",
+    "cognitive-tools",
+    "techniques",
+    "review",
+    "design-thinking",
+    "critical-thinking",
+    "exploration",
+    "synthesis"
+  ],
+  "repository": {
+    "type": "local",
+    "path": ".claude/plugins/thinkies"
+  },
+  "compatibility": {
+    "claude-code": ">=1.0.0"
+  }
+}
