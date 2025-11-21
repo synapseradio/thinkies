@@ -1,0 +1,24 @@
+{
+  "name": "plugin-name",
+  "version": "1.0.0",
+  "description": "Brief description of what this plugin provides",
+  "author": "your-name",
+  "skills": [
+    "skill-name-1",
+    "skill-name-2",
+    "skill-name-3"
+  ],
+  "keywords": [
+    "relevant",
+    "keywords",
+    "for",
+    "discovery"
+  ],
+  "repository": {
+    "type": "local",
+    "path": ".claude/plugins/plugin-name"
+  },
+  "compatibility": {
+    "claude-code": ">=1.0.0"
+  }
+}
