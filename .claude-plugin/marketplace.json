@@ -33,6 +33,31 @@
         "exploration",
         "synthesis"
       ]
+    },
+    {
+      "name": "software",
+      "description": "Software engineering reasoning skills for understanding code, making design decisions, and managing change safely",
+      "version": "1.0.0",
+      "source": "./plugins/software",
+      "category": "development",
+      "author": {
+        "name": "synapseradio"
+      },
+      "repository": "https://github.com/synapseradio/thinkies",
+      "keywords": [
+        "software-engineering",
+        "code",
+        "architecture",
+        "debugging",
+        "refactoring",
+        "api-design",
+        "code-quality",
+        "technical-decisions",
+        "design-patterns",
+        "impact-analysis",
+        "breaking-changes",
+        "edge-cases"
+      ]
     }
   ]
 }

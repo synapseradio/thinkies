@@ -37,14 +37,6 @@ Guides Claude in detecting premature abstraction, painful duplication, and leaky
 
 **When Claude uses this**: During code review or when discussing pain from duplication or rigid abstractions.
 
-## Philosophy
-
-This plugin embodies practical sincerity by:
-- Providing systematic frameworks over subjective opinions
-- Teaching evaluation methods rather than prescribing answers
-- Making assessment criteria transparent
-- Acknowledging trade-offs honestly
-
 ## Examples
 
 ### Evaluating an Architecture Decision

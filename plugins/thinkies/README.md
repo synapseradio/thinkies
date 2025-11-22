@@ -170,17 +170,6 @@ You: "I feel like this UX flow is wrong but can't articulate why"
 Claude: [Uses `follow-intuition` to develop the feeling, `perspective-shift` to see as different users, `decompose` to break down the flow, and `theme-find` to identify issues]
 ```
 
-## Philosophy
-
-Thinkies is built on the belief that thinking itself is a skill that can be developed. By making thinking processes explicit and structured, we can:
-- Overcome cognitive biases
-- Generate more creative solutions
-- Make better decisions
-- Communicate more clearly
-- Learn more effectively
-
-The skills don't tell you what to think, but rather provide frameworks for how to think about problems more effectively.
-
 ## Version
 
 Current version: 1.0.0

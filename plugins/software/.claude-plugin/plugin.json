@@ -1,0 +1,67 @@
+{
+  "name": "software",
+  "version": "1.0.0",
+  "description": "Code-specific reasoning skills for software engineering: architecture, debugging, refactoring, and safe change management",
+  "author": "synapseradio",
+  "skills": {
+    "count": 10,
+    "categories": {
+      "understanding": {
+        "description": "Building mental models of code structure and behavior",
+        "skills": [
+          "codebase-cartography",
+          "trace-flow",
+          "dependency-graph"
+        ]
+      },
+      "deciding": {
+        "description": "Evaluating alternatives and making design choices",
+        "skills": [
+          "trade-space",
+          "abstraction-level"
+        ]
+      },
+      "validating": {
+        "description": "Ensuring correctness, safety, and compatibility",
+        "skills": [
+          "blast-radius",
+          "edge-finder"
+        ]
+      },
+      "improving": {
+        "description": "Identifying and addressing code quality issues",
+        "skills": [
+          "complexity-surface"
+        ]
+      },
+      "anticipating": {
+        "description": "Predicting failures and designing safe migrations",
+        "skills": [
+          "failure-modes",
+          "migration-path"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "software-engineering",
+    "code",
+    "architecture",
+    "debugging",
+    "refactoring",
+    "api-design",
+    "code-quality",
+    "technical-decisions",
+    "design-patterns",
+    "impact-analysis",
+    "breaking-changes",
+    "edge-cases"
+  ],
+  "repository": {
+    "type": "local",
+    "path": ".claude/plugins/software"
+  },
+  "compatibility": {
+    "claude-code": ">=1.0.0"
+  }
+}
